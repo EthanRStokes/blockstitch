@@ -1,9 +1,9 @@
-// blockwork — a generic, Scratch-style draggable block-editor library for
+// blockstitch — a generic, Scratch-style draggable block-editor library for
 // Vue 3. The host app supplies its own block vocabulary (instruction types,
 // operators, field forms, icons) via the registries below, and its own
 // backend via `configureCanvas`; this package owns the canvas/pan/zoom,
 // drag/snap, value-expression, palette, comment, and theming machinery.
-// Import `blockwork/theme.css` once, globally, alongside this module.
+// Import `blockstitch/theme.css` once, globally, alongside this module.
 
 // ── Block graph (generic instruction-tree addressing) ──────────────────────
 export * from './graph/blockGraph';

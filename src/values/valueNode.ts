@@ -1,7 +1,7 @@
 // A small recursive expression tree backing a value block — a number, a
 // piece of text, a blank boolean slot, an operator applied to nested `args`,
 // a variable/parameter reference, or a call to a user-defined block. This is
-// blockwork's own concrete shape (not a host-supplied generic) because the
+// blockstitch's own concrete shape (not a host-supplied generic) because the
 // drag/eval-preview machinery genuinely needs to know these cases — but
 // `op`/`block_id` are free-form strings, so a host's own operator vocabulary
 // (registered via graph/operatorRegistry.ts) and custom-block ids both fit

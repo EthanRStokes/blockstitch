@@ -1,5 +1,5 @@
 // Runtime icon registry backing AppButton/AppDropdown/CommentCard etc. — a
-// small built-in set covers blockwork's own chrome; the host registers its
+// small built-in set covers blockstitch's own chrome; the host registers its
 // full icon set (including one per block type) at startup via
 // `registerIcons`, so every `icon="..."` string used anywhere in the host
 // app resolves the same way it always has.

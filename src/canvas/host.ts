@@ -1,5 +1,5 @@
 // The single point where a host app wires its own backend/data into
-// blockwork's canvas — configured once at startup (`configureCanvas`), then
+// blockstitch's canvas — configured once at startup (`configureCanvas`), then
 // read by canvasDrag.ts, valueDrag.ts, and the canvas components as a module
 // singleton, the same "configure once, read everywhere" shape every other
 // registry in this package uses.
@@ -113,14 +113,14 @@ export interface CanvasHost<TNode extends BlockNode = BlockNode> {
 
 let host: CanvasHost<any> | null = null;
 
-/** Wires the host's backend/data into blockwork's canvas — call once at
+/** Wires the host's backend/data into blockstitch's canvas — call once at
  * startup, before mounting the `<Canvas>` component. */
 export function configureCanvas<TNode extends BlockNode>(config: CanvasHost<TNode>): void {
   host = config;
 }
 
 export function getHost<TNode extends BlockNode = BlockNode>(): CanvasHost<TNode> {
-  if (!host) throw new Error('blockwork: configureCanvas() must be called before using the canvas');
+  if (!host) throw new Error('blockstitch: configureCanvas() must be called before using the canvas');
   return host;
 }
 

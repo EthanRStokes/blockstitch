@@ -2,11 +2,11 @@ import { ref } from 'vue';
 
 type Theme = 'light' | 'dark';
 
-const STORAGE_KEY = 'blockwork-theme';
-// A host migrating from a pre-blockwork theme toggle of its own can carry its
+const STORAGE_KEY = 'blockstitch-theme';
+// A host migrating from a pre-blockstitch theme toggle of its own can carry its
 // old storage key's value over here once, so an existing user's preference
 // survives the switch instead of silently resetting to the dark default.
-const LEGACY_STORAGE_KEYS = ['macros-theme'];
+const LEGACY_STORAGE_KEYS = ['blockwork-theme', 'macros-theme'];
 
 function readStored(): Theme | null {
   try {

@@ -2,7 +2,7 @@ import { ref } from 'vue';
 
 // Module-level singleton — one panel width for the whole app's lifetime,
 // same pattern as theme/useTheme.ts's currentTheme.
-const STORAGE_KEY = 'blockwork-sidebar-width';
+const STORAGE_KEY = 'blockstitch-sidebar-width';
 const DEFAULT_WIDTH = 348;
 const MIN_WIDTH = 180;
 const MAX_WIDTH = 600;

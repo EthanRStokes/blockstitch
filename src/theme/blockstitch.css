@@ -2,91 +2,91 @@
 
 :root {
   /* ── Base palette ──────────────────────────────────────────────────────── */
-  --bw-bg: #1c1c1e;
-  --bw-bg2: #2c2c2e;
-  --bw-bg3: #3a3a3c;
-  --bw-border: #48484a;
-  --bw-text: #e0e0e0;
-  --bw-text-dim: #8e8e93;
-  --bw-accent: #0a84ff;
-  --bw-accent-rgb: 10, 132, 255;
-  --bw-red: #ff453a;
-  --bw-red-rgb: 255, 69, 58;
-  --bw-yellow: #ffd60a;
-  --bw-yellow-rgb: 255, 214, 10;
-  --bw-yellow-bg: #2d2200;
-  --bw-yellow-border: #7d6200;
-  --bw-accent-light: #3aa0ff;
-  --bw-radius: 6px;
-  --bw-radius-lg: 14px;
-  --bw-spacing-sm: 8px;
-  --bw-spacing: 12px;
-  --bw-btn-h-sm: 26px;
-  --bw-btn-h-md: 32px;
-  --bw-connector-cut-inset: 10px;
-  --bw-connector-cut-width: 22px;
-  --bw-connector-notch-depth: 8px;
+  --blockstitch-bg: #1c1c1e;
+  --blockstitch-bg2: #2c2c2e;
+  --blockstitch-bg3: #3a3a3c;
+  --blockstitch-border: #48484a;
+  --blockstitch-text: #e0e0e0;
+  --blockstitch-text-dim: #8e8e93;
+  --blockstitch-accent: #0a84ff;
+  --blockstitch-accent-rgb: 10, 132, 255;
+  --blockstitch-red: #ff453a;
+  --blockstitch-red-rgb: 255, 69, 58;
+  --blockstitch-yellow: #ffd60a;
+  --blockstitch-yellow-rgb: 255, 214, 10;
+  --blockstitch-yellow-bg: #2d2200;
+  --blockstitch-yellow-border: #7d6200;
+  --blockstitch-accent-light: #3aa0ff;
+  --blockstitch-radius: 6px;
+  --blockstitch-radius-lg: 14px;
+  --blockstitch-spacing-sm: 8px;
+  --blockstitch-spacing: 12px;
+  --blockstitch-btn-h-sm: 26px;
+  --blockstitch-btn-h-md: 32px;
+  --blockstitch-connector-cut-inset: 10px;
+  --blockstitch-connector-cut-width: 22px;
+  --blockstitch-connector-notch-depth: 8px;
 
   /* ── Glass surfaces ────────────────────────────────────────────────────── */
-  --bw-glass-bg: rgba(44, 44, 46, 0.55);
-  --bw-glass-bg-strong: rgba(58, 58, 60, 0.6);
-  --bw-glass-border: rgba(255, 255, 255, 0.08);
-  --bw-glass-blur: 18px;
+  --blockstitch-glass-bg: rgba(44, 44, 46, 0.55);
+  --blockstitch-glass-bg-strong: rgba(58, 58, 60, 0.6);
+  --blockstitch-glass-border: rgba(255, 255, 255, 0.08);
+  --blockstitch-glass-blur: 18px;
 
   /* ── Shadows & glow ────────────────────────────────────────────────────── */
-  --bw-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
-  --bw-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
-  --bw-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.45);
-  --bw-bevel-top: inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  --bw-bevel-press: inset 0 1px 2px rgba(0, 0, 0, 0.3);
-  --bw-glow-accent: 0 0 0 3px rgba(var(--bw-accent-rgb), 0.28), 0 0 20px rgba(var(--bw-accent-rgb), 0.25);
-  --bw-glow-red: 0 0 0 3px rgba(var(--bw-red-rgb), 0.28), 0 0 20px rgba(var(--bw-red-rgb), 0.3);
+  --blockstitch-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --blockstitch-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --blockstitch-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --blockstitch-bevel-top: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  --blockstitch-bevel-press: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  --blockstitch-glow-accent: 0 0 0 3px rgba(var(--blockstitch-accent-rgb), 0.28), 0 0 20px rgba(var(--blockstitch-accent-rgb), 0.25);
+  --blockstitch-glow-red: 0 0 0 3px rgba(var(--blockstitch-red-rgb), 0.28), 0 0 20px rgba(var(--blockstitch-red-rgb), 0.3);
 
   /* ── Overlays & scrollbar ──────────────────────────────────────────────── */
-  --bw-hover-overlay: rgba(255, 255, 255, 0.05);
-  --bw-scrollbar-thumb: rgba(255, 255, 255, 0.18);
-  --bw-scrollbar-thumb-hover: rgba(255, 255, 255, 0.3);
+  --blockstitch-hover-overlay: rgba(255, 255, 255, 0.05);
+  --blockstitch-scrollbar-thumb: rgba(255, 255, 255, 0.18);
+  --blockstitch-scrollbar-thumb-hover: rgba(255, 255, 255, 0.3);
 
   /* ── Motion ────────────────────────────────────────────────────────────── */
-  --bw-ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
-  --bw-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
-  --bw-dur-fast: 120ms;
-  --bw-dur-base: 200ms;
-  --bw-dur-slow: 400ms;
+  --blockstitch-ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --blockstitch-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --blockstitch-dur-fast: 120ms;
+  --blockstitch-dur-base: 200ms;
+  --blockstitch-dur-slow: 400ms;
 
 }
 
 :root[data-theme="light"] {
-  --bw-bg: #f2f2f5;
-  --bw-bg2: #ffffff;
-  --bw-bg3: #e7e7ec;
-  --bw-border: #d4d4da;
-  --bw-text: #1c1c1e;
-  --bw-text-dim: #6e6e73;
-  --bw-yellow-bg: #fff6d8;
-  --bw-yellow-border: #e6c200;
+  --blockstitch-bg: #f2f2f5;
+  --blockstitch-bg2: #ffffff;
+  --blockstitch-bg3: #e7e7ec;
+  --blockstitch-border: #d4d4da;
+  --blockstitch-text: #1c1c1e;
+  --blockstitch-text-dim: #6e6e73;
+  --blockstitch-yellow-bg: #fff6d8;
+  --blockstitch-yellow-border: #e6c200;
 
-  --bw-glass-bg: rgba(255, 255, 255, 0.6);
-  --bw-glass-bg-strong: rgba(230, 230, 236, 0.75);
-  --bw-glass-border: rgba(0, 0, 0, 0.12);
+  --blockstitch-glass-bg: rgba(255, 255, 255, 0.6);
+  --blockstitch-glass-bg-strong: rgba(230, 230, 236, 0.75);
+  --blockstitch-glass-border: rgba(0, 0, 0, 0.12);
 
-  --bw-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
-  --bw-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
-  --bw-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.14);
-  --bw-bevel-top: inset 0 1px 0 rgba(255, 255, 255, 0.8);
-  --bw-bevel-press: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  --blockstitch-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --blockstitch-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --blockstitch-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.14);
+  --blockstitch-bevel-top: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  --blockstitch-bevel-press: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 
-  --bw-hover-overlay: rgba(0, 0, 0, 0.04);
-  --bw-scrollbar-thumb: rgba(0, 0, 0, 0.15);
-  --bw-scrollbar-thumb-hover: rgba(0, 0, 0, 0.28);
+  --blockstitch-hover-overlay: rgba(0, 0, 0, 0.04);
+  --blockstitch-scrollbar-thumb: rgba(0, 0, 0, 0.15);
+  --blockstitch-scrollbar-thumb-hover: rgba(0, 0, 0, 0.28);
 
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   font-size: 14px;
-  background: var(--bw-bg);
-  color: var(--bw-text);
+  background: var(--blockstitch-bg);
+  color: var(--blockstitch-text);
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -102,79 +102,79 @@ button {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  min-height: var(--bw-btn-h-md);
+  min-height: var(--blockstitch-btn-h-md);
   padding: 0 12px;
-  border-radius: var(--bw-radius);
-  border: 1px solid var(--bw-border);
-  background: linear-gradient(160deg, var(--bw-bg3), var(--bw-bg2));
-  color: var(--bw-text);
+  border-radius: var(--blockstitch-radius);
+  border: 1px solid var(--blockstitch-border);
+  background: linear-gradient(160deg, var(--blockstitch-bg3), var(--blockstitch-bg2));
+  color: var(--blockstitch-text);
   cursor: pointer;
   font-family: inherit;
   font-size: 13px;
   white-space: nowrap;
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm);
-  transition: transform var(--bw-dur-fast) var(--bw-ease-standard),
-              box-shadow var(--bw-dur-fast) var(--bw-ease-standard),
-              background var(--bw-dur-fast) var(--bw-ease-standard),
-              border-color var(--bw-dur-fast) var(--bw-ease-standard),
-              color var(--bw-dur-fast) var(--bw-ease-standard);
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm);
+  transition: transform var(--blockstitch-dur-fast) var(--blockstitch-ease-standard),
+              box-shadow var(--blockstitch-dur-fast) var(--blockstitch-ease-standard),
+              background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard),
+              border-color var(--blockstitch-dur-fast) var(--blockstitch-ease-standard),
+              color var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
 button svg { width: 15px; height: 15px; flex-shrink: 0; }
 button:hover:not(:disabled) {
-  background: linear-gradient(160deg, var(--bw-bg3), var(--bw-bg3));
+  background: linear-gradient(160deg, var(--blockstitch-bg3), var(--blockstitch-bg3));
   transform: translateY(-1px);
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-md);
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-md);
 }
 button:active:not(:disabled) {
   transform: translateY(0) scale(0.97);
-  box-shadow: var(--bw-bevel-press), var(--bw-shadow-sm);
+  box-shadow: var(--blockstitch-bevel-press), var(--blockstitch-shadow-sm);
 }
 button:focus-visible {
   outline: none;
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm), var(--bw-glow-accent);
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm), var(--blockstitch-glow-accent);
 }
 button:disabled { opacity: 0.38; cursor: default; }
 
 /* Primary call-to-action buttons */
 .btn-primary, #run-macro-btn, #save-macro-btn {
-  background: linear-gradient(160deg, var(--bw-accent-light), var(--bw-accent));
-  border-color: var(--bw-accent);
+  background: linear-gradient(160deg, var(--blockstitch-accent-light), var(--blockstitch-accent));
+  border-color: var(--blockstitch-accent);
   color: #fff;
   font-weight: 600;
 }
 #run-macro-btn { min-width: 130px; }
 .btn-primary:hover:not(:disabled), #run-macro-btn:hover:not(:disabled), #save-macro-btn:hover:not(:disabled) {
   background: linear-gradient(160deg, #56aeff, #1c8fff);
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-md), 0 0 16px rgba(var(--bw-accent-rgb), 0.35);
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-md), 0 0 16px rgba(var(--blockstitch-accent-rgb), 0.35);
 }
 .btn-primary:disabled, #run-macro-btn:disabled, #save-macro-btn:disabled {
-  background: linear-gradient(160deg, var(--bw-bg3), var(--bw-bg2));
-  border-color: var(--bw-border);
-  color: var(--bw-text);
+  background: linear-gradient(160deg, var(--blockstitch-bg3), var(--blockstitch-bg2));
+  border-color: var(--blockstitch-border);
+  color: var(--blockstitch-text);
 }
 
 /* Destructive / danger buttons — ghost by default, fills on hover */
 .btn-danger, button.danger {
   background: transparent;
-  border-color: var(--bw-red);
-  color: var(--bw-red);
-  box-shadow: var(--bw-shadow-sm);
+  border-color: var(--blockstitch-red);
+  color: var(--blockstitch-red);
+  box-shadow: var(--blockstitch-shadow-sm);
 }
 .btn-danger:hover:not(:disabled), button.danger:hover:not(:disabled) {
-  background: rgba(var(--bw-red-rgb), 0.14);
-  box-shadow: var(--bw-shadow-md);
+  background: rgba(var(--blockstitch-red-rgb), 0.14);
+  box-shadow: var(--blockstitch-shadow-md);
 }
 .btn-danger:active:not(:disabled), button.danger:active:not(:disabled) {
-  background: rgba(var(--bw-red-rgb), 0.22);
+  background: rgba(var(--blockstitch-red-rgb), 0.22);
 }
 .btn-danger:focus-visible, button.danger:focus-visible {
-  box-shadow: var(--bw-shadow-sm), var(--bw-glow-red);
+  box-shadow: var(--blockstitch-shadow-sm), var(--blockstitch-glow-red);
 }
 
 /* Icon-only buttons (row controls, list-item remove, etc.) */
 .btn-icon {
-  min-height: var(--bw-btn-h-sm);
-  min-width: var(--bw-btn-h-sm);
+  min-height: var(--blockstitch-btn-h-sm);
+  min-width: var(--blockstitch-btn-h-sm);
   padding: 0;
   font-size: 12px;
 }
@@ -197,38 +197,38 @@ button:disabled { opacity: 0.38; cursor: default; }
 .btn-chip {
   background: transparent;
   border-style: dashed;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
   box-shadow: none;
   font-weight: 500;
 }
 .btn-chip:hover:not(:disabled) {
-  color: var(--bw-text);
-  border-color: var(--bw-text-dim);
+  color: var(--blockstitch-text);
+  border-color: var(--blockstitch-text-dim);
   box-shadow: none;
   transform: none;
 }
 .btn-chip.capturing {
   border-style: solid;
-  border-color: var(--bw-accent);
-  color: var(--bw-accent);
-  box-shadow: var(--bw-glow-accent);
+  border-color: var(--blockstitch-accent);
+  color: var(--blockstitch-accent);
+  box-shadow: var(--blockstitch-glow-accent);
 }
 
 /* ── Inputs & Selects ────────────────────────────────────────────────────── */
 input[type="text"], input[type="number"], input[type="time"], select, textarea {
-  background: var(--bw-bg2);
-  color: var(--bw-text);
-  border: 1px solid var(--bw-border);
-  border-radius: var(--bw-radius);
+  background: var(--blockstitch-bg2);
+  color: var(--blockstitch-text);
+  border: 1px solid var(--blockstitch-border);
+  border-radius: var(--blockstitch-radius);
   padding: 5px 8px;
   font-size: 13px;
-  transition: box-shadow var(--bw-dur-fast) var(--bw-ease-standard),
-              border-color var(--bw-dur-fast) var(--bw-ease-standard);
+  transition: box-shadow var(--blockstitch-dur-fast) var(--blockstitch-ease-standard),
+              border-color var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
 input[type="text"]:focus, input[type="number"]:focus, input[type="time"]:focus, select:focus {
   outline: none;
-  border-color: var(--bw-accent);
-  box-shadow: var(--bw-glow-accent);
+  border-color: var(--blockstitch-accent);
+  box-shadow: var(--blockstitch-glow-accent);
 }
 /* `<input type="time">`'s internal hour/minute/AM-PM fields, selection
    highlight, spin arrows, and calendar-picker icon are all painted by the
@@ -243,11 +243,11 @@ input[type="text"]:focus, input[type="number"]:focus, input[type="time"]:focus, 
 :root:not([data-theme="light"]) input[type="time"] { color-scheme: dark; }
 :root[data-theme="light"] input[type="time"] { color-scheme: light; }
 input[type="time"]::-webkit-calendar-picker-indicator { cursor: pointer; }
-input.invalid, select.invalid { border-color: var(--bw-red); }
-input.invalid:focus, select.invalid:focus { box-shadow: var(--bw-glow-red); }
-.invalid-hint { color: var(--bw-red); font-size: 11px; }
+input.invalid, select.invalid { border-color: var(--blockstitch-red); }
+input.invalid:focus, select.invalid:focus { box-shadow: var(--blockstitch-glow-red); }
+.invalid-hint { color: var(--blockstitch-red); font-size: 11px; }
 
-.shake-once { animation: fieldShake var(--bw-dur-slow) var(--bw-ease-standard); }
+.shake-once { animation: fieldShake var(--blockstitch-dur-slow) var(--blockstitch-ease-standard); }
 @keyframes fieldShake {
   0%, 100% { transform: translateX(0); }
   20% { transform: translateX(-4px); }
@@ -257,7 +257,7 @@ input.invalid:focus, select.invalid:focus { box-shadow: var(--bw-glow-red); }
 }
 
 /* Checkbox */
-input[type="checkbox"] { accent-color: var(--bw-accent); cursor: pointer; }
+input[type="checkbox"] { accent-color: var(--blockstitch-accent); cursor: pointer; }
 
 /* ── Layout ──────────────────────────────────────────────────────────────── */
 #main-page, #settings-page {
@@ -266,8 +266,8 @@ input[type="checkbox"] { accent-color: var(--bw-accent); cursor: pointer; }
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transition: opacity var(--bw-dur-base) var(--bw-ease-standard),
-              transform var(--bw-dur-base) var(--bw-ease-standard);
+  transition: opacity var(--blockstitch-dur-base) var(--blockstitch-ease-standard),
+              transform var(--blockstitch-dur-base) var(--blockstitch-ease-standard);
 }
 #main-page.page-hidden, #settings-page.page-hidden {
   opacity: 0;
@@ -278,13 +278,13 @@ input[type="checkbox"] { accent-color: var(--bw-accent); cursor: pointer; }
 .toolbar-row {
   display: flex;
   align-items: center;
-  gap: var(--bw-spacing);
-  padding: var(--bw-spacing-sm) var(--bw-spacing);
-  background: var(--bw-glass-bg);
-  backdrop-filter: blur(var(--bw-glass-blur));
-  -webkit-backdrop-filter: blur(var(--bw-glass-blur));
-  border-bottom: 1px solid var(--bw-glass-border);
-  box-shadow: var(--bw-shadow-sm);
+  gap: var(--blockstitch-spacing);
+  padding: var(--blockstitch-spacing-sm) var(--blockstitch-spacing);
+  background: var(--blockstitch-glass-bg);
+  backdrop-filter: blur(var(--blockstitch-glass-blur));
+  -webkit-backdrop-filter: blur(var(--blockstitch-glass-blur));
+  border-bottom: 1px solid var(--blockstitch-glass-border);
+  box-shadow: var(--blockstitch-shadow-sm);
   flex-shrink: 0;
 }
 
@@ -294,7 +294,7 @@ input[type="checkbox"] { accent-color: var(--bw-accent); cursor: pointer; }
   gap: 4px;
   flex: 1;
 }
-.selector-left label { font-size: 12px; color: var(--bw-text-dim); }
+.selector-left label { font-size: 12px; color: var(--blockstitch-text-dim); }
 .macro-dropdown-row {
   display: flex;
   align-items: center;
@@ -308,7 +308,7 @@ input[type="checkbox"] { accent-color: var(--bw-accent); cursor: pointer; }
   margin-left: auto;
 }
 
-.run-left { display: flex; gap: var(--bw-spacing); align-items: center; flex: 1; }
+.run-left { display: flex; gap: var(--blockstitch-spacing); align-items: center; flex: 1; }
 .run-right { margin-left: auto; display: flex; align-items: center; }
 
 /* ── Macro Editor ────────────────────────────────────────────────────────── */
@@ -317,25 +317,25 @@ input[type="checkbox"] { accent-color: var(--bw-accent); cursor: pointer; }
   flex-direction: column;
   flex: 1;
   overflow: hidden;
-  background: var(--bw-glass-bg);
-  backdrop-filter: blur(var(--bw-glass-blur));
-  -webkit-backdrop-filter: blur(var(--bw-glass-blur));
-  border-top: 1px solid var(--bw-glass-border);
+  background: var(--blockstitch-glass-bg);
+  backdrop-filter: blur(var(--blockstitch-glass-blur));
+  -webkit-backdrop-filter: blur(var(--blockstitch-glass-blur));
+  border-top: 1px solid var(--blockstitch-glass-border);
 }
 
 .editor-title-row {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: var(--bw-spacing-sm) var(--bw-spacing);
-  border-bottom: 1px solid var(--bw-glass-border);
+  padding: var(--blockstitch-spacing-sm) var(--blockstitch-spacing);
+  border-bottom: 1px solid var(--blockstitch-glass-border);
   flex-shrink: 0;
 }
-.editor-title-row label { font-size: 12px; color: var(--bw-text-dim); white-space: nowrap; }
+.editor-title-row label { font-size: 12px; color: var(--blockstitch-text-dim); white-space: nowrap; }
 .editor-title-row input { flex: 1; }
 
 .speed-control { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
-.speed-control label { font-size: 12px; color: var(--bw-text-dim); white-space: nowrap; }
+.speed-control label { font-size: 12px; color: var(--blockstitch-text-dim); white-space: nowrap; }
 
 .speed-control input[type="range"] {
   --fill: 0%;
@@ -344,77 +344,77 @@ input[type="checkbox"] { accent-color: var(--bw-accent); cursor: pointer; }
   height: 5px;
   margin: 0;
   border-radius: 999px;
-  background: linear-gradient(to right, var(--bw-accent) var(--fill), var(--bw-bg3) var(--fill));
-  border: 1px solid var(--bw-border);
-  box-shadow: var(--bw-bevel-press);
+  background: linear-gradient(to right, var(--blockstitch-accent) var(--fill), var(--blockstitch-bg3) var(--fill));
+  border: 1px solid var(--blockstitch-border);
+  box-shadow: var(--blockstitch-bevel-press);
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
-  transition: box-shadow var(--bw-dur-fast) var(--bw-ease-standard);
+  transition: box-shadow var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
 .speed-control input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: linear-gradient(160deg, var(--bw-accent-light), var(--bw-accent));
-  border: 1px solid var(--bw-accent);
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm);
+  background: linear-gradient(160deg, var(--blockstitch-accent-light), var(--blockstitch-accent));
+  border: 1px solid var(--blockstitch-accent);
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm);
   cursor: pointer;
-  transition: transform var(--bw-dur-fast) var(--bw-ease-standard),
-              box-shadow var(--bw-dur-fast) var(--bw-ease-standard);
+  transition: transform var(--blockstitch-dur-fast) var(--blockstitch-ease-standard),
+              box-shadow var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
 .speed-control input[type="range"]::-moz-range-track {
   height: 5px;
   border-radius: 999px;
-  background: var(--bw-bg3);
-  border: 1px solid var(--bw-border);
+  background: var(--blockstitch-bg3);
+  border: 1px solid var(--blockstitch-border);
 }
 .speed-control input[type="range"]::-moz-range-progress {
   height: 5px;
   border-radius: 999px 0 0 999px;
-  background: var(--bw-accent);
+  background: var(--blockstitch-accent);
 }
 .speed-control input[type="range"]::-moz-range-thumb {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: linear-gradient(160deg, var(--bw-accent-light), var(--bw-accent));
-  border: 1px solid var(--bw-accent);
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm);
+  background: linear-gradient(160deg, var(--blockstitch-accent-light), var(--blockstitch-accent));
+  border: 1px solid var(--blockstitch-accent);
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm);
   cursor: pointer;
-  transition: transform var(--bw-dur-fast) var(--bw-ease-standard),
-              box-shadow var(--bw-dur-fast) var(--bw-ease-standard);
+  transition: transform var(--blockstitch-dur-fast) var(--blockstitch-ease-standard),
+              box-shadow var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
 .speed-control input[type="range"]:hover:not(:disabled)::-webkit-slider-thumb,
 .speed-control input[type="range"]:active:not(:disabled)::-webkit-slider-thumb {
   transform: scale(1.15);
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-md);
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-md);
 }
 .speed-control input[type="range"]:hover:not(:disabled)::-moz-range-thumb,
 .speed-control input[type="range"]:active:not(:disabled)::-moz-range-thumb {
   transform: scale(1.15);
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-md);
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-md);
 }
 .speed-control input[type="range"]:focus-visible { outline: none; }
-.speed-control input[type="range"]:focus-visible::-webkit-slider-thumb { box-shadow: var(--bw-glow-accent); }
-.speed-control input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: var(--bw-glow-accent); }
-.speed-control input[type="range"]:disabled { cursor: default; opacity: 0.38; background: var(--bw-bg3); }
+.speed-control input[type="range"]:focus-visible::-webkit-slider-thumb { box-shadow: var(--blockstitch-glow-accent); }
+.speed-control input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: var(--blockstitch-glow-accent); }
+.speed-control input[type="range"]:disabled { cursor: default; opacity: 0.38; background: var(--blockstitch-bg3); }
 .speed-control input[type="range"]:disabled::-webkit-slider-thumb {
   cursor: default;
-  background: var(--bw-bg3);
-  border-color: var(--bw-border);
-  box-shadow: var(--bw-shadow-sm);
+  background: var(--blockstitch-bg3);
+  border-color: var(--blockstitch-border);
+  box-shadow: var(--blockstitch-shadow-sm);
 }
 .speed-control input[type="range"]:disabled::-moz-range-thumb {
   cursor: default;
-  background: var(--bw-bg3);
-  border-color: var(--bw-border);
-  box-shadow: var(--bw-shadow-sm);
+  background: var(--blockstitch-bg3);
+  border-color: var(--blockstitch-border);
+  box-shadow: var(--blockstitch-shadow-sm);
 }
 
 .speed-control input.speed-number { flex: none; width: 42px; text-align: right; font-variant-numeric: tabular-nums; }
-.speed-control .speed-unit { font-size: 12px; color: var(--bw-text-dim); }
+.speed-control .speed-unit { font-size: 12px; color: var(--blockstitch-text-dim); }
 
 .editor-content-area {
   flex: 1;
@@ -439,8 +439,8 @@ input[type="checkbox"] { accent-color: var(--bw-accent); cursor: pointer; }
   position: relative;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--bw-glass-border);
-  background: var(--bw-glass-bg);
+  border-right: 1px solid var(--blockstitch-glass-border);
+  background: var(--blockstitch-glass-bg);
   overflow: hidden;
 }
 
@@ -459,7 +459,7 @@ input[type="checkbox"] { accent-color: var(--bw-accent); cursor: pointer; }
 }
 .sidebar-resize-handle:hover,
 body.sidebar-resizing .sidebar-resize-handle {
-  background: var(--bw-accent);
+  background: var(--blockstitch-accent);
   opacity: 0.5;
 }
 /* Keeps the resize cursor and stops text selection for the whole drag, not
@@ -474,20 +474,20 @@ body.sidebar-resizing {
   align-items: center;
   gap: 4px;
   text-align: center;
-  padding: var(--bw-spacing-sm);
+  padding: var(--blockstitch-spacing-sm);
   font-size: 11px;
-  color: var(--bw-text-dim);
-  border-bottom: 1px solid var(--bw-glass-border);
+  color: var(--blockstitch-text-dim);
+  border-bottom: 1px solid var(--blockstitch-glass-border);
   flex-shrink: 0;
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard), color var(--bw-dur-fast) var(--bw-ease-standard);
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard), color var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
 .sidebar-trash-hint svg { width: 18px; height: 18px; opacity: 0.6; }
 .instruction-sidebar.trash-armed {
-  background: rgba(var(--bw-red-rgb), 0.14);
+  background: rgba(var(--blockstitch-red-rgb), 0.14);
 }
 .instruction-sidebar.trash-armed .sidebar-trash-hint {
-  color: var(--bw-red);
-  background: rgba(var(--bw-red-rgb), 0.18);
+  color: var(--blockstitch-red);
+  background: rgba(var(--blockstitch-red-rgb), 0.18);
 }
 .instruction-sidebar.trash-armed .sidebar-trash-hint svg { opacity: 1; }
 
@@ -499,7 +499,7 @@ body.sidebar-resizing {
   display: flex;
   flex-direction: column;
   scrollbar-width: thin;
-  scrollbar-color: var(--bw-scrollbar-thumb) transparent;
+  scrollbar-color: var(--blockstitch-scrollbar-thumb) transparent;
 }
 
 /* Each prefab is only as wide as its own content — same as a real
@@ -508,7 +508,7 @@ body.sidebar-resizing {
    wider than the sidebar itself just scrolls into view (.sidebar-scroll's
    overflow-x above) rather than getting clipped or wrapped. */
 .sidebar-palette {
-  padding: var(--bw-spacing-sm);
+  padding: var(--blockstitch-spacing-sm);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -525,12 +525,12 @@ body.sidebar-resizing {
 
 .sidebar-section-label {
   flex-shrink: 0;
-  padding: var(--bw-spacing-sm) var(--bw-spacing-sm) 0;
+  padding: var(--blockstitch-spacing-sm) var(--blockstitch-spacing-sm) 0;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--bw-text-dim);
-  border-top: 1px solid var(--bw-glass-border);
+  color: var(--blockstitch-text-dim);
+  border-top: 1px solid var(--blockstitch-glass-border);
 }
 .sidebar-palette-values {
   flex-shrink: 0;
@@ -543,10 +543,10 @@ body.sidebar-resizing {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--bw-spacing-sm);
+  gap: var(--blockstitch-spacing-sm);
   flex-shrink: 0;
-  padding: var(--bw-spacing-sm) var(--bw-spacing-sm) 0;
-  border-top: 1px solid var(--bw-glass-border);
+  padding: var(--blockstitch-spacing-sm) var(--blockstitch-spacing-sm) 0;
+  border-top: 1px solid var(--blockstitch-glass-border);
 }
 .sidebar-section-label-row .sidebar-section-label { border-top: none; padding: 0; }
 .btn-make-variable {
@@ -561,17 +561,17 @@ body.sidebar-resizing {
   inset: 0;
   overflow: auto;
   scrollbar-width: thin;
-  scrollbar-color: var(--bw-scrollbar-thumb) transparent;
+  scrollbar-color: var(--blockstitch-scrollbar-thumb) transparent;
 }
 .canvas-scroll::-webkit-scrollbar { width: 10px; height: 10px; }
 .canvas-scroll::-webkit-scrollbar-track { background: transparent; }
 .canvas-scroll::-webkit-scrollbar-thumb {
-  background: var(--bw-scrollbar-thumb);
+  background: var(--blockstitch-scrollbar-thumb);
   border-radius: 8px;
   border: 2px solid transparent;
   background-clip: padding-box;
 }
-.canvas-scroll::-webkit-scrollbar-thumb:hover { background: var(--bw-scrollbar-thumb-hover); background-clip: padding-box; }
+.canvas-scroll::-webkit-scrollbar-thumb:hover { background: var(--blockstitch-scrollbar-thumb-hover); background-clip: padding-box; }
 .canvas-scroll.panning, .canvas-scroll.panning * { cursor: grabbing !important; }
 
 /* canvas-sizer's box is the zoomed (on-screen) footprint, so the native
@@ -587,15 +587,15 @@ body.sidebar-resizing {
   top: 0;
   transform-origin: 0 0;
   background-image:
-    radial-gradient(circle, var(--bw-glass-border) 1.2px, transparent 1.2px);
+    radial-gradient(circle, var(--blockstitch-glass-border) 1.2px, transparent 1.2px);
   background-size: 22px 22px;
 }
 
 /* Zoom/reset controls — floating column, bottom-right of the canvas view. */
 .canvas-zoom-controls {
   position: absolute;
-  right: var(--bw-spacing-md, 16px);
-  bottom: var(--bw-spacing-md, 16px);
+  right: var(--blockstitch-spacing-md, 16px);
+  bottom: var(--blockstitch-spacing-md, 16px);
   z-index: 4;
   display: flex;
   flex-direction: column;
@@ -607,7 +607,7 @@ body.sidebar-resizing {
   min-height: unset;
   padding: 0;
   border-radius: 50%;
-  background: var(--bw-glass-bg);
+  background: var(--blockstitch-glass-bg);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
@@ -633,7 +633,7 @@ body.sidebar-resizing {
    It only gets a quiet accent tint on its icon/label so it still reads as an
    entry point at a glance; no outline or glow (that used to make the old
    fixed root marker feel like an error state). */
-.instruction-row-when-ran .instruction-shape { color: var(--bw-accent); }
+.instruction-row-when-ran .instruction-shape { color: var(--blockstitch-accent); }
 .instruction-row-when-ran svg { width: 14px; height: 14px; flex-shrink: 0; }
 .instruction-row-when-ran .when-ran-label {
   text-transform: uppercase;
@@ -663,17 +663,17 @@ body.sidebar-resizing {
   clip-path: polygon(
     4px 0,
     calc(100% - 4px) 0, 100% 4px,
-    100% calc(100% - var(--bw-connector-notch-depth) - 4px),
-    calc(100% - 4px) calc(100% - var(--bw-connector-notch-depth)),
-    40.5px calc(100% - var(--bw-connector-notch-depth)),
-    37.5px calc(100% - var(--bw-connector-notch-depth) + 2px),
-    34.5px calc(100% - var(--bw-connector-notch-depth) + 6px),
+    100% calc(100% - var(--blockstitch-connector-notch-depth) - 4px),
+    calc(100% - 4px) calc(100% - var(--blockstitch-connector-notch-depth)),
+    40.5px calc(100% - var(--blockstitch-connector-notch-depth)),
+    37.5px calc(100% - var(--blockstitch-connector-notch-depth) + 2px),
+    34.5px calc(100% - var(--blockstitch-connector-notch-depth) + 6px),
     31.5px 100%, 22.5px 100%,
-    19.5px calc(100% - var(--bw-connector-notch-depth) + 6px),
-    16.5px calc(100% - var(--bw-connector-notch-depth) + 2px),
-    13.5px calc(100% - var(--bw-connector-notch-depth)),
-    4px calc(100% - var(--bw-connector-notch-depth)),
-    0 calc(100% - var(--bw-connector-notch-depth) - 4px), 0 4px
+    19.5px calc(100% - var(--blockstitch-connector-notch-depth) + 6px),
+    16.5px calc(100% - var(--blockstitch-connector-notch-depth) + 2px),
+    13.5px calc(100% - var(--blockstitch-connector-notch-depth)),
+    4px calc(100% - var(--blockstitch-connector-notch-depth)),
+    0 calc(100% - var(--blockstitch-connector-notch-depth) - 4px), 0 4px
   );
 }
 /* Mitered 1.5px shrink of the polygon above — see the backer comment on
@@ -683,35 +683,35 @@ body.sidebar-resizing {
   clip-path: polygon(
     4.6px 1.5px,
     calc(100% - 4.6px) 1.5px, calc(100% - 1.5px) 4.6px,
-    calc(100% - 1.5px) calc(100% - var(--bw-connector-notch-depth) - 4.6px),
-    calc(100% - 4.6px) calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    40px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    36.5px calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    33.5px calc(100% - var(--bw-connector-notch-depth) + 4.9px),
+    calc(100% - 1.5px) calc(100% - var(--blockstitch-connector-notch-depth) - 4.6px),
+    calc(100% - 4.6px) calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    40px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    36.5px calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    33.5px calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
     31px calc(100% - 1.5px), 23px calc(100% - 1.5px),
-    20.5px calc(100% - var(--bw-connector-notch-depth) + 4.9px),
-    17.5px calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    14px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    4.6px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    1.5px calc(100% - var(--bw-connector-notch-depth) - 4.6px), 1.5px 4.6px
+    20.5px calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
+    17.5px calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    14px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    4.6px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    1.5px calc(100% - var(--blockstitch-connector-notch-depth) - 4.6px), 1.5px 4.6px
   );
 }
 .instruction-row-header .instruction-shape {
-  padding: 6px var(--bw-spacing) calc(6px + var(--bw-connector-notch-depth)) var(--bw-spacing);
+  padding: 6px var(--blockstitch-spacing) calc(6px + var(--blockstitch-connector-notch-depth)) var(--blockstitch-spacing);
   clip-path: polygon(
     4.6px 1.5px,
     calc(100% - 4.6px) 1.5px, calc(100% - 1.5px) 4.6px,
-    calc(100% - 1.5px) calc(100% - var(--bw-connector-notch-depth) - 4.6px),
-    calc(100% - 4.6px) calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    40px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    36.5px calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    33.5px calc(100% - var(--bw-connector-notch-depth) + 4.9px),
+    calc(100% - 1.5px) calc(100% - var(--blockstitch-connector-notch-depth) - 4.6px),
+    calc(100% - 4.6px) calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    40px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    36.5px calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    33.5px calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
     31px calc(100% - 1.5px), 23px calc(100% - 1.5px),
-    20.5px calc(100% - var(--bw-connector-notch-depth) + 4.9px),
-    17.5px calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    14px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    4.6px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    1.5px calc(100% - var(--bw-connector-notch-depth) - 4.6px), 1.5px 4.6px
+    20.5px calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
+    17.5px calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    14px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    4.6px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    1.5px calc(100% - var(--blockstitch-connector-notch-depth) - 4.6px), 1.5px 4.6px
   );
 }
 
@@ -756,13 +756,13 @@ body.sidebar-resizing {
 }
 .instruction-row-cap .instruction-shape {
   /* The base rule's `min-height: 60px` already bakes in the 8px tab
-     reservation (padding-bottom's `+ var(--bw-connector-notch-depth)`) — just
+     reservation (padding-bottom's `+ var(--blockstitch-connector-notch-depth)`) — just
      shrinking padding-bottom leaves min-height clamping the box to the same
      60px anyway, so the row never actually gets shorter, it just gains a
      dead strip of background below the content where the tab used to be
      (and the row's outline/drop-shadow traces that now-pointless strip).
      Shrinking min-height to match is what actually cuts the row down. */
-  min-height: calc(60px - var(--bw-connector-notch-depth));
+  min-height: calc(60px - var(--blockstitch-connector-notch-depth));
   padding-bottom: 6px;
   clip-path: polygon(
     4.6px 1.5px, 13px 1.5px, 15.5px 3.1px, 18.5px 7.1px, 22px 9.5px, 32px 9.5px, 35.5px 7.1px, 38.5px 3.1px, 41px 1.5px,
@@ -799,12 +799,12 @@ body.sidebar-resizing {
    avoided the row: `clip-path` on an ancestor would clip away real content
    painted inside it (`.wrap-head-line`'s icon/condition/label, `.wrap-mid-
    bar`'s "else" text). A bar's tab (where it feeds into the mouth below)
-   pokes `--bw-connector-notch-depth` *past* its own bottom edge — done by
+   pokes `--blockstitch-connector-notch-depth` *past* its own bottom edge — done by
    extending both shape layers down via `inset`, not the bar's real box, so
    the overhang never disturbs the bar's own flex height or its content's
    padding/centering. A bar's notch (where it receives the mouth *above* it)
    is carved *into* its own top edge instead and needs no overhang. Every
-   bar's notch/tab that meets a mouth is shifted right by `--bw-wrap-spine-w`
+   bar's notch/tab that meets a mouth is shifted right by `--blockstitch-wrap-spine-w`
    to land under the mouth's own indent; the head bar's top notch and the
    foot bar's bottom tab are the two true outer corners of the whole block
    (unshifted, chamfered like an ordinary row's) — everywhere else is a
@@ -816,9 +816,9 @@ body.sidebar-resizing {
    notch/tab curves *away* from that rectangle the shadow simply isn't there
    to clip *to*, and the border vanishes exactly along the curve (confirmed:
    this is what made the connector walls look "cut off"). `::before` (the
-   ORIGINAL, unmitered polygon, solid `--bw-wrap-outline`) sits behind
+   ORIGINAL, unmitered polygon, solid `--blockstitch-wrap-outline`) sits behind
    `::after` (the same polygon shrunk 1.5px inward along every edge's own
-   normal, mitered at corners, solid `--bw-wrap-fill`) so a uniform ~1.5px ring
+   normal, mitered at corners, solid `--blockstitch-wrap-fill`) so a uniform ~1.5px ring
    of the first shows around the second — identical math to `.instruction-
    row`'s `::before`/`::after`, just re-plotted for these three shapes.
    Sharp (unchamfered) internal corners — where a bar's flat edge meets its
@@ -849,12 +849,12 @@ body.sidebar-resizing {
    matching a real C-block's hit area being its outline, not its bounding
    box.
 
-   All bars share one fill via CSS custom properties (`--bw-wrap-fill`/
-   `--bw-wrap-outline`) set once on `.instruction-row-wrap`, so hovering the
+   All bars share one fill via CSS custom properties (`--blockstitch-wrap-fill`/
+   `--blockstitch-wrap-outline`) set once on `.instruction-row-wrap`, so hovering the
    (real, unclipped) head line can re-theme every bar and the spine at once
    with a single `:has()` rule instead of repeating it per bar.
 
-   `--bw-wrap-fill` reintroduces the gradient look without reintroducing the
+   `--blockstitch-wrap-fill` reintroduces the gradient look without reintroducing the
    seams a *diagonal* gradient caused: each bar/spine paints this background
    relative to *its own* box, not the whole block's, so any gradient whose
    color depends on the box's *height* (a diagonal, or a vertical one) hits
@@ -865,7 +865,7 @@ body.sidebar-resizing {
    full-width piece (head/mid/foot — the bars — always exactly the row's own
    width) shares the identical size reference, so they render pixel-
    identical at any given x with no seam possible between them. The one
-   piece narrower than the row is the spine (`--bw-wrap-spine-w`, pinned to the
+   piece narrower than the row is the spine (`--blockstitch-wrap-spine-w`, pinned to the
    block's left edge) — sampling this same gradient relative to its own
    (much narrower) width would recreate the same bug in miniature (a visibly
    steeper, mismatched ramp packed into a much narrower strip), so
@@ -873,22 +873,22 @@ body.sidebar-resizing {
    row's width before sampling, then crops the visible result back down —
    see its comment for why. */
 .instruction-row.instruction-row-wrap {
-  --bw-wrap-head-h: 60px;
-  --bw-wrap-mid-h: 36px;
-  --bw-wrap-foot-h: 32px;
+  --blockstitch-wrap-head-h: 60px;
+  --blockstitch-wrap-mid-h: 36px;
+  --blockstitch-wrap-foot-h: 32px;
   /* Every notch/tab/spine measurement below is a `calc()` off this one
      value, so shrinking it narrows the whole left-hand column (spine,
      mouth indent, bar notches) consistently without touching any of that
      geometry by hand. */
-  --bw-wrap-spine-w: 20px;
-  --bw-wrap-fill: linear-gradient(to right, var(--bw-bg3), var(--bw-bg2));
-  --bw-wrap-outline: var(--bw-border);
+  --blockstitch-wrap-spine-w: 20px;
+  --blockstitch-wrap-fill: linear-gradient(to right, var(--blockstitch-bg3), var(--blockstitch-bg2));
+  --blockstitch-wrap-outline: var(--blockstitch-border);
   display: flex;
   flex-direction: column;
   position: relative;
   cursor: default;
-  transition: filter var(--bw-dur-fast) var(--bw-ease-standard);
-  filter: drop-shadow(var(--bw-shadow-sm));
+  transition: filter var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
+  filter: drop-shadow(var(--blockstitch-shadow-sm));
 }
 /* The base `.instruction-row::before`/`::after` rules (the ordinary
    puzzle-piece fill/backer) would otherwise still apply here too, since this
@@ -917,9 +917,9 @@ body.sidebar-resizing {
    a mouth, or a nested block sitting inside it, never triggers this. */
 .instruction-row.instruction-row-wrap:has(.wrap-head-line:hover, .wrap-mid-bar:hover, .wrap-foot-bar:hover),
 .instruction-row.instruction-row-wrap.wrap-spine-hover {
-  /* A flat color, not `var(--bw-bg3)` directly — `background: var(--bw-wrap-fill)`
+  /* A flat color, not `var(--blockstitch-bg3)` directly — `background: var(--blockstitch-wrap-fill)`
      resolves to either `background-image` (gradient) or `background-color`
-     (plain color) depending on which kind of value `--bw-wrap-fill` holds, and
+     (plain color) depending on which kind of value `--blockstitch-wrap-fill` holds, and
      the two are separate sub-properties under that shorthand. Toggling
      between a `linear-gradient()` and a bare color therefore isn't a single
      smooth transition: `background-color` fades in from transparent fine,
@@ -932,49 +932,49 @@ body.sidebar-resizing {
      holds a `linear-gradient()` on both sides of the toggle, so it
      interpolates smoothly like any other gradient-to-gradient transition
      instead of ever touching `none`. */
-  --bw-wrap-fill: linear-gradient(to right, var(--bw-bg3), var(--bw-bg3));
-  --bw-wrap-outline: var(--bw-accent);
+  --blockstitch-wrap-fill: linear-gradient(to right, var(--blockstitch-bg3), var(--blockstitch-bg3));
+  --blockstitch-wrap-outline: var(--blockstitch-accent);
 }
 
 .wrap-head-line {
   flex-shrink: 0;
-  height: var(--bw-wrap-head-h);
+  height: var(--blockstitch-wrap-head-h);
   box-sizing: border-box;
   position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   gap: 8px;
-  padding: 6px var(--bw-spacing) 0 calc(var(--bw-connector-cut-inset) + var(--bw-connector-cut-width) + 8px);
+  padding: 6px var(--blockstitch-spacing) 0 calc(var(--blockstitch-connector-cut-inset) + var(--blockstitch-connector-cut-width) + 8px);
   cursor: grab;
   touch-action: none;
 }
 .wrap-head-line:active { cursor: grabbing; }
-/* Border layer: the ORIGINAL, unmitered shape in solid `--bw-wrap-outline` —
+/* Border layer: the ORIGINAL, unmitered shape in solid `--blockstitch-wrap-outline` —
    identical to `.instruction-row::before` below, just this bar's own outer
    top notch + a tab overhanging into the mouth (shifted under its indent,
    the first nested row's own top notch docks into it). */
 .wrap-head-line::before {
   content: '';
   position: absolute;
-  inset: 0 0 calc(-1 * var(--bw-connector-notch-depth)) 0;
+  inset: 0 0 calc(-1 * var(--blockstitch-connector-notch-depth)) 0;
   z-index: -2;
   pointer-events: none;
-  background: var(--bw-wrap-outline);
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-wrap-outline);
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
   clip-path: polygon(
     4px 0, 13.5px 0, 16.5px 2px, 19.5px 6px, 22.5px 8px, 31.5px 8px, 34.5px 6px, 37.5px 2px, 40.5px 0,
     calc(100% - 4px) 0, 100% 4px,
-    100% var(--bw-wrap-head-h),
-    calc(var(--bw-wrap-spine-w) + 40.5px) var(--bw-wrap-head-h),
-    calc(var(--bw-wrap-spine-w) + 37.5px) calc(var(--bw-wrap-head-h) + 2px),
-    calc(var(--bw-wrap-spine-w) + 34.5px) calc(var(--bw-wrap-head-h) + 6px),
-    calc(var(--bw-wrap-spine-w) + 31.5px) calc(var(--bw-wrap-head-h) + var(--bw-connector-notch-depth)),
-    calc(var(--bw-wrap-spine-w) + 22.5px) calc(var(--bw-wrap-head-h) + var(--bw-connector-notch-depth)),
-    calc(var(--bw-wrap-spine-w) + 19.5px) calc(var(--bw-wrap-head-h) + 6px),
-    calc(var(--bw-wrap-spine-w) + 16.5px) calc(var(--bw-wrap-head-h) + 2px),
-    calc(var(--bw-wrap-spine-w) + 13.5px) var(--bw-wrap-head-h),
-    0 var(--bw-wrap-head-h), 0 4px
+    100% var(--blockstitch-wrap-head-h),
+    calc(var(--blockstitch-wrap-spine-w) + 40.5px) var(--blockstitch-wrap-head-h),
+    calc(var(--blockstitch-wrap-spine-w) + 37.5px) calc(var(--blockstitch-wrap-head-h) + 2px),
+    calc(var(--blockstitch-wrap-spine-w) + 34.5px) calc(var(--blockstitch-wrap-head-h) + 6px),
+    calc(var(--blockstitch-wrap-spine-w) + 31.5px) calc(var(--blockstitch-wrap-head-h) + var(--blockstitch-connector-notch-depth)),
+    calc(var(--blockstitch-wrap-spine-w) + 22.5px) calc(var(--blockstitch-wrap-head-h) + var(--blockstitch-connector-notch-depth)),
+    calc(var(--blockstitch-wrap-spine-w) + 19.5px) calc(var(--blockstitch-wrap-head-h) + 6px),
+    calc(var(--blockstitch-wrap-spine-w) + 16.5px) calc(var(--blockstitch-wrap-head-h) + 2px),
+    calc(var(--blockstitch-wrap-spine-w) + 13.5px) var(--blockstitch-wrap-head-h),
+    0 var(--blockstitch-wrap-head-h), 0 4px
   );
 }
 /* Backer: same shape shrunk 1.5px inward (mitered numbers lifted verbatim
@@ -987,23 +987,23 @@ body.sidebar-resizing {
 .wrap-head-line::after {
   content: '';
   position: absolute;
-  inset: 0 0 calc(-1 * var(--bw-connector-notch-depth)) 0;
+  inset: 0 0 calc(-1 * var(--blockstitch-connector-notch-depth)) 0;
   z-index: -1;
   pointer-events: none;
-  background: var(--bw-wrap-fill);
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-wrap-fill);
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
   clip-path: polygon(
     4.6px 1.5px, 13px 1.5px, 15.5px 3.1px, 18.5px 7.1px, 22px 9.5px, 32px 9.5px, 35.5px 7.1px, 38.5px 3.1px, 41px 1.5px,
     calc(100% - 4.6px) 1.5px, calc(100% - 1.5px) 4.6px,
-    calc(100% - 1.5px) calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    calc(var(--bw-wrap-spine-w) + 40px) calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    calc(var(--bw-wrap-spine-w) + 36.5px) calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    calc(var(--bw-wrap-spine-w) + 33.5px) calc(100% - var(--bw-connector-notch-depth) + 4.9px),
-    calc(var(--bw-wrap-spine-w) + 31px) calc(100% - 1.5px), calc(var(--bw-wrap-spine-w) + 23px) calc(100% - 1.5px),
-    calc(var(--bw-wrap-spine-w) + 20.5px) calc(100% - var(--bw-connector-notch-depth) + 4.9px),
-    calc(var(--bw-wrap-spine-w) + 17.5px) calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    calc(var(--bw-wrap-spine-w) + 14px) calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    1.5px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
+    calc(100% - 1.5px) calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    calc(var(--blockstitch-wrap-spine-w) + 40px) calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    calc(var(--blockstitch-wrap-spine-w) + 36.5px) calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    calc(var(--blockstitch-wrap-spine-w) + 33.5px) calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
+    calc(var(--blockstitch-wrap-spine-w) + 31px) calc(100% - 1.5px), calc(var(--blockstitch-wrap-spine-w) + 23px) calc(100% - 1.5px),
+    calc(var(--blockstitch-wrap-spine-w) + 20.5px) calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
+    calc(var(--blockstitch-wrap-spine-w) + 17.5px) calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    calc(var(--blockstitch-wrap-spine-w) + 14px) calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    1.5px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
     1.5px 4.6px
   );
 }
@@ -1011,7 +1011,7 @@ body.sidebar-resizing {
   width: 16px;
   height: 16px;
   flex-shrink: 0;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
 }
 
 /* The "else" bar of an If-Else block — the mid bar sitting between the two
@@ -1027,12 +1027,12 @@ body.sidebar-resizing {
    indent instead. */
 .wrap-mid-bar {
   flex-shrink: 0;
-  height: var(--bw-wrap-mid-h);
+  height: var(--blockstitch-wrap-mid-h);
   box-sizing: border-box;
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: calc(var(--bw-wrap-spine-w) + 8px);
+  padding-left: calc(var(--blockstitch-wrap-spine-w) + 8px);
   /* Grabbable like `.wrap-head-line` — the pointerdown/contextmenu listeners
      live on the outer `.instruction-row-wrap` now (see InstructionRow.vue),
      so every bar making up the block's outline needs to actually look and
@@ -1045,62 +1045,62 @@ body.sidebar-resizing {
 .wrap-mid-bar::before {
   content: '';
   position: absolute;
-  inset: 0 0 calc(-1 * var(--bw-connector-notch-depth)) 0;
+  inset: 0 0 calc(-1 * var(--blockstitch-connector-notch-depth)) 0;
   z-index: -2;
   pointer-events: none;
-  background: var(--bw-wrap-outline);
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-wrap-outline);
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
   clip-path: polygon(
     0 0,
-    calc(var(--bw-wrap-spine-w) + 13.5px) 0,
-    calc(var(--bw-wrap-spine-w) + 16.5px) 2px,
-    calc(var(--bw-wrap-spine-w) + 19.5px) 6px,
-    calc(var(--bw-wrap-spine-w) + 22.5px) var(--bw-connector-notch-depth),
-    calc(var(--bw-wrap-spine-w) + 31.5px) var(--bw-connector-notch-depth),
-    calc(var(--bw-wrap-spine-w) + 34.5px) 6px,
-    calc(var(--bw-wrap-spine-w) + 37.5px) 2px,
-    calc(var(--bw-wrap-spine-w) + 40.5px) 0,
+    calc(var(--blockstitch-wrap-spine-w) + 13.5px) 0,
+    calc(var(--blockstitch-wrap-spine-w) + 16.5px) 2px,
+    calc(var(--blockstitch-wrap-spine-w) + 19.5px) 6px,
+    calc(var(--blockstitch-wrap-spine-w) + 22.5px) var(--blockstitch-connector-notch-depth),
+    calc(var(--blockstitch-wrap-spine-w) + 31.5px) var(--blockstitch-connector-notch-depth),
+    calc(var(--blockstitch-wrap-spine-w) + 34.5px) 6px,
+    calc(var(--blockstitch-wrap-spine-w) + 37.5px) 2px,
+    calc(var(--blockstitch-wrap-spine-w) + 40.5px) 0,
     100% 0,
-    100% var(--bw-wrap-mid-h),
-    calc(var(--bw-wrap-spine-w) + 40.5px) var(--bw-wrap-mid-h),
-    calc(var(--bw-wrap-spine-w) + 37.5px) calc(var(--bw-wrap-mid-h) + 2px),
-    calc(var(--bw-wrap-spine-w) + 34.5px) calc(var(--bw-wrap-mid-h) + 6px),
-    calc(var(--bw-wrap-spine-w) + 31.5px) calc(var(--bw-wrap-mid-h) + var(--bw-connector-notch-depth)),
-    calc(var(--bw-wrap-spine-w) + 22.5px) calc(var(--bw-wrap-mid-h) + var(--bw-connector-notch-depth)),
-    calc(var(--bw-wrap-spine-w) + 19.5px) calc(var(--bw-wrap-mid-h) + 6px),
-    calc(var(--bw-wrap-spine-w) + 16.5px) calc(var(--bw-wrap-mid-h) + 2px),
-    calc(var(--bw-wrap-spine-w) + 13.5px) var(--bw-wrap-mid-h),
-    0 var(--bw-wrap-mid-h)
+    100% var(--blockstitch-wrap-mid-h),
+    calc(var(--blockstitch-wrap-spine-w) + 40.5px) var(--blockstitch-wrap-mid-h),
+    calc(var(--blockstitch-wrap-spine-w) + 37.5px) calc(var(--blockstitch-wrap-mid-h) + 2px),
+    calc(var(--blockstitch-wrap-spine-w) + 34.5px) calc(var(--blockstitch-wrap-mid-h) + 6px),
+    calc(var(--blockstitch-wrap-spine-w) + 31.5px) calc(var(--blockstitch-wrap-mid-h) + var(--blockstitch-connector-notch-depth)),
+    calc(var(--blockstitch-wrap-spine-w) + 22.5px) calc(var(--blockstitch-wrap-mid-h) + var(--blockstitch-connector-notch-depth)),
+    calc(var(--blockstitch-wrap-spine-w) + 19.5px) calc(var(--blockstitch-wrap-mid-h) + 6px),
+    calc(var(--blockstitch-wrap-spine-w) + 16.5px) calc(var(--blockstitch-wrap-mid-h) + 2px),
+    calc(var(--blockstitch-wrap-spine-w) + 13.5px) var(--blockstitch-wrap-mid-h),
+    0 var(--blockstitch-wrap-mid-h)
   );
 }
 .wrap-mid-bar::after {
   content: '';
   position: absolute;
-  inset: 0 0 calc(-1 * var(--bw-connector-notch-depth)) 0;
+  inset: 0 0 calc(-1 * var(--blockstitch-connector-notch-depth)) 0;
   z-index: -1;
   pointer-events: none;
-  background: var(--bw-wrap-fill);
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-wrap-fill);
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
   clip-path: polygon(
     1.5px 1.5px,
-    calc(var(--bw-wrap-spine-w) + 13px) 1.5px,
-    calc(var(--bw-wrap-spine-w) + 15.5px) 3.1px,
-    calc(var(--bw-wrap-spine-w) + 18.5px) 7.1px,
-    calc(var(--bw-wrap-spine-w) + 22px) calc(var(--bw-connector-notch-depth) + 1.5px),
-    calc(var(--bw-wrap-spine-w) + 32px) calc(var(--bw-connector-notch-depth) + 1.5px),
-    calc(var(--bw-wrap-spine-w) + 35.5px) 7.1px,
-    calc(var(--bw-wrap-spine-w) + 38.5px) 3.1px,
-    calc(var(--bw-wrap-spine-w) + 41px) 1.5px,
+    calc(var(--blockstitch-wrap-spine-w) + 13px) 1.5px,
+    calc(var(--blockstitch-wrap-spine-w) + 15.5px) 3.1px,
+    calc(var(--blockstitch-wrap-spine-w) + 18.5px) 7.1px,
+    calc(var(--blockstitch-wrap-spine-w) + 22px) calc(var(--blockstitch-connector-notch-depth) + 1.5px),
+    calc(var(--blockstitch-wrap-spine-w) + 32px) calc(var(--blockstitch-connector-notch-depth) + 1.5px),
+    calc(var(--blockstitch-wrap-spine-w) + 35.5px) 7.1px,
+    calc(var(--blockstitch-wrap-spine-w) + 38.5px) 3.1px,
+    calc(var(--blockstitch-wrap-spine-w) + 41px) 1.5px,
     calc(100% - 1.5px) 1.5px,
-    calc(100% - 1.5px) calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    calc(var(--bw-wrap-spine-w) + 40px) calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    calc(var(--bw-wrap-spine-w) + 36.5px) calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    calc(var(--bw-wrap-spine-w) + 33.5px) calc(100% - var(--bw-connector-notch-depth) + 4.9px),
-    calc(var(--bw-wrap-spine-w) + 31px) calc(100% - 1.5px), calc(var(--bw-wrap-spine-w) + 23px) calc(100% - 1.5px),
-    calc(var(--bw-wrap-spine-w) + 20.5px) calc(100% - var(--bw-connector-notch-depth) + 4.9px),
-    calc(var(--bw-wrap-spine-w) + 17.5px) calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    calc(var(--bw-wrap-spine-w) + 14px) calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    1.5px calc(100% - var(--bw-connector-notch-depth) - 1.5px)
+    calc(100% - 1.5px) calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    calc(var(--blockstitch-wrap-spine-w) + 40px) calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    calc(var(--blockstitch-wrap-spine-w) + 36.5px) calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    calc(var(--blockstitch-wrap-spine-w) + 33.5px) calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
+    calc(var(--blockstitch-wrap-spine-w) + 31px) calc(100% - 1.5px), calc(var(--blockstitch-wrap-spine-w) + 23px) calc(100% - 1.5px),
+    calc(var(--blockstitch-wrap-spine-w) + 20.5px) calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
+    calc(var(--blockstitch-wrap-spine-w) + 17.5px) calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    calc(var(--blockstitch-wrap-spine-w) + 14px) calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    1.5px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px)
   );
 }
 
@@ -1129,12 +1129,12 @@ body.sidebar-resizing {
    real box instead — and dropping the matching overhang on the pseudo
    layers below, `inset: 0` now that the box itself already spans the tab —
    fixes both: the exact same clip-path math still traces the identical
-   shape (it was already written in terms of `var(--bw-wrap-foot-h)` plus
+   shape (it was already written in terms of `var(--blockstitch-wrap-foot-h)` plus
    `notch-depth`, not `100%`, so it never assumed the overhang), just now
    over a real, hoverable, correctly-sized box. */
 .wrap-foot-bar {
   flex-shrink: 0;
-  height: calc(var(--bw-wrap-foot-h) + var(--bw-connector-notch-depth));
+  height: calc(var(--blockstitch-wrap-foot-h) + var(--blockstitch-connector-notch-depth));
   box-sizing: border-box;
   position: relative;
   cursor: grab;
@@ -1147,31 +1147,31 @@ body.sidebar-resizing {
   inset: 0;
   z-index: -2;
   pointer-events: none;
-  background: var(--bw-wrap-outline);
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-wrap-outline);
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
   clip-path: polygon(
     0 0,
-    calc(var(--bw-wrap-spine-w) + 13.5px) 0,
-    calc(var(--bw-wrap-spine-w) + 16.5px) 2px,
-    calc(var(--bw-wrap-spine-w) + 19.5px) 6px,
-    calc(var(--bw-wrap-spine-w) + 22.5px) var(--bw-connector-notch-depth),
-    calc(var(--bw-wrap-spine-w) + 31.5px) var(--bw-connector-notch-depth),
-    calc(var(--bw-wrap-spine-w) + 34.5px) 6px,
-    calc(var(--bw-wrap-spine-w) + 37.5px) 2px,
-    calc(var(--bw-wrap-spine-w) + 40.5px) 0,
+    calc(var(--blockstitch-wrap-spine-w) + 13.5px) 0,
+    calc(var(--blockstitch-wrap-spine-w) + 16.5px) 2px,
+    calc(var(--blockstitch-wrap-spine-w) + 19.5px) 6px,
+    calc(var(--blockstitch-wrap-spine-w) + 22.5px) var(--blockstitch-connector-notch-depth),
+    calc(var(--blockstitch-wrap-spine-w) + 31.5px) var(--blockstitch-connector-notch-depth),
+    calc(var(--blockstitch-wrap-spine-w) + 34.5px) 6px,
+    calc(var(--blockstitch-wrap-spine-w) + 37.5px) 2px,
+    calc(var(--blockstitch-wrap-spine-w) + 40.5px) 0,
     100% 0,
-    100% calc(var(--bw-wrap-foot-h) - 4px),
-    calc(100% - 4px) var(--bw-wrap-foot-h),
-    40.5px var(--bw-wrap-foot-h),
-    37.5px calc(var(--bw-wrap-foot-h) + 2px),
-    34.5px calc(var(--bw-wrap-foot-h) + 6px),
-    31.5px calc(var(--bw-wrap-foot-h) + var(--bw-connector-notch-depth)),
-    22.5px calc(var(--bw-wrap-foot-h) + var(--bw-connector-notch-depth)),
-    19.5px calc(var(--bw-wrap-foot-h) + 6px),
-    16.5px calc(var(--bw-wrap-foot-h) + 2px),
-    13.5px var(--bw-wrap-foot-h),
-    4px var(--bw-wrap-foot-h),
-    0 calc(var(--bw-wrap-foot-h) - 4px)
+    100% calc(var(--blockstitch-wrap-foot-h) - 4px),
+    calc(100% - 4px) var(--blockstitch-wrap-foot-h),
+    40.5px var(--blockstitch-wrap-foot-h),
+    37.5px calc(var(--blockstitch-wrap-foot-h) + 2px),
+    34.5px calc(var(--blockstitch-wrap-foot-h) + 6px),
+    31.5px calc(var(--blockstitch-wrap-foot-h) + var(--blockstitch-connector-notch-depth)),
+    22.5px calc(var(--blockstitch-wrap-foot-h) + var(--blockstitch-connector-notch-depth)),
+    19.5px calc(var(--blockstitch-wrap-foot-h) + 6px),
+    16.5px calc(var(--blockstitch-wrap-foot-h) + 2px),
+    13.5px var(--blockstitch-wrap-foot-h),
+    4px var(--blockstitch-wrap-foot-h),
+    0 calc(var(--blockstitch-wrap-foot-h) - 4px)
   );
 }
 .wrap-foot-bar::after {
@@ -1180,30 +1180,30 @@ body.sidebar-resizing {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: var(--bw-wrap-fill);
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-wrap-fill);
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
   clip-path: polygon(
     1.5px 1.5px,
-    calc(var(--bw-wrap-spine-w) + 13px) 1.5px,
-    calc(var(--bw-wrap-spine-w) + 15.5px) 3.1px,
-    calc(var(--bw-wrap-spine-w) + 18.5px) 7.1px,
-    calc(var(--bw-wrap-spine-w) + 22px) calc(var(--bw-connector-notch-depth) + 1.5px),
-    calc(var(--bw-wrap-spine-w) + 32px) calc(var(--bw-connector-notch-depth) + 1.5px),
-    calc(var(--bw-wrap-spine-w) + 35.5px) 7.1px,
-    calc(var(--bw-wrap-spine-w) + 38.5px) 3.1px,
-    calc(var(--bw-wrap-spine-w) + 41px) 1.5px,
+    calc(var(--blockstitch-wrap-spine-w) + 13px) 1.5px,
+    calc(var(--blockstitch-wrap-spine-w) + 15.5px) 3.1px,
+    calc(var(--blockstitch-wrap-spine-w) + 18.5px) 7.1px,
+    calc(var(--blockstitch-wrap-spine-w) + 22px) calc(var(--blockstitch-connector-notch-depth) + 1.5px),
+    calc(var(--blockstitch-wrap-spine-w) + 32px) calc(var(--blockstitch-connector-notch-depth) + 1.5px),
+    calc(var(--blockstitch-wrap-spine-w) + 35.5px) 7.1px,
+    calc(var(--blockstitch-wrap-spine-w) + 38.5px) 3.1px,
+    calc(var(--blockstitch-wrap-spine-w) + 41px) 1.5px,
     calc(100% - 1.5px) 1.5px,
-    calc(100% - 1.5px) calc(100% - var(--bw-connector-notch-depth) - 4.6px),
-    calc(100% - 4.6px) calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    40px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    36.5px calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    33.5px calc(100% - var(--bw-connector-notch-depth) + 4.9px),
+    calc(100% - 1.5px) calc(100% - var(--blockstitch-connector-notch-depth) - 4.6px),
+    calc(100% - 4.6px) calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    40px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    36.5px calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    33.5px calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
     31px calc(100% - 1.5px), 23px calc(100% - 1.5px),
-    20.5px calc(100% - var(--bw-connector-notch-depth) + 4.9px),
-    17.5px calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    14px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    4.6px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    1.5px calc(100% - var(--bw-connector-notch-depth) - 4.6px)
+    20.5px calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
+    17.5px calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    14px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    4.6px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    1.5px calc(100% - var(--blockstitch-connector-notch-depth) - 4.6px)
   );
 }
 
@@ -1214,7 +1214,7 @@ body.sidebar-resizing {
 
    `min-height` guarantees a visibly hollow gap even with zero nested rows:
    without it, an empty mouth collapses to 0 height, which puts the bar
-   above's tab (overhanging `--bw-connector-notch-depth` past its own bottom)
+   above's tab (overhanging `--blockstitch-connector-notch-depth` past its own bottom)
    and the bar below's notch (carved into its own top) at the exact same
    position — a degenerate, self-intersecting pair that reads as a solid
    block with no interior at all (verified).
@@ -1233,8 +1233,8 @@ body.sidebar-resizing {
   /* Above every bar (all `z-index: auto`), regardless of DOM order — see
      the spine comment on `::before` just below for why this matters. */
   z-index: 1;
-  margin-left: var(--bw-wrap-spine-w);
-  padding-right: var(--bw-spacing);
+  margin-left: var(--blockstitch-wrap-spine-w);
+  padding-right: var(--blockstitch-spacing);
   min-height: 20px;
   /* `.instruction-row-wrap`'s own width is auto (shrink-to-fit): a
      column flex container's auto width is the largest max-content
@@ -1271,9 +1271,9 @@ body.sidebar-resizing {
 
    Widened past its own visible width — `left` pulls it out to the block's
    true left edge as before, but `width` extends it all the way to the
-   *mouth's* right edge instead of stopping at `--bw-wrap-spine-w` — then
+   *mouth's* right edge instead of stopping at `--blockstitch-wrap-spine-w` — then
    `clip-path` crops the visible result back down to just the spine's own
-   sliver. The reason: `--bw-wrap-fill`'s gradient (see the big comment on
+   sliver. The reason: `--blockstitch-wrap-fill`'s gradient (see the big comment on
    `.instruction-row-wrap`) is sampled relative to *this element's own
    width*, and the bars sample that same gradient relative to *their* own
    width, which is the whole row. Those two widths only match — making the
@@ -1296,9 +1296,9 @@ body.sidebar-resizing {
   box-sizing: border-box;
   top: -2px;
   bottom: -2px;
-  left: calc(-1 * var(--bw-wrap-spine-w));
-  width: calc(100% + var(--bw-wrap-spine-w));
-  clip-path: inset(0 calc(100% - var(--bw-wrap-spine-w)) 0 0);
+  left: calc(-1 * var(--blockstitch-wrap-spine-w));
+  width: calc(100% + var(--blockstitch-wrap-spine-w));
+  clip-path: inset(0 calc(100% - var(--blockstitch-wrap-spine-w)) 0 0);
   /* Behind the mouth's own real nested rows (a separate, local concern from
      the parent's `z-index: 1` above, which ranks the *whole mouth* against
      its sibling bars) — otherwise nested blocks would render underneath
@@ -1317,9 +1317,9 @@ body.sidebar-resizing {
      guard, which lets a click land on `.wrap-mouth` itself — i.e. this
      pseudo — without being treated as a click on a nested block). */
   cursor: grab;
-  background: var(--bw-wrap-fill);
-  border-left: 1.5px solid var(--bw-wrap-outline);
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard), border-color var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-wrap-fill);
+  border-left: 1.5px solid var(--blockstitch-wrap-outline);
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard), border-color var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
 .wrap-mouth:active::before { cursor: grabbing; }
 /* The spine's inner (right) edge — a flat color, so unlike `::before` it
@@ -1337,21 +1337,21 @@ body.sidebar-resizing {
   width: 1.5px;
   z-index: -1;
   pointer-events: none;
-  background: var(--bw-wrap-outline);
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-wrap-outline);
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
 .wrap-mouth .instruction-row {
   pointer-events: auto;
 }
 
 .strand-empty-hint {
-  padding: var(--bw-spacing-sm) var(--bw-spacing);
+  padding: var(--blockstitch-spacing-sm) var(--blockstitch-spacing);
   font-size: 12px;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
   font-style: italic;
-  border: 1px dashed var(--bw-glass-border);
-  border-radius: var(--bw-radius);
-  background: var(--bw-glass-bg);
+  border: 1px dashed var(--blockstitch-glass-border);
+  border-radius: var(--blockstitch-radius);
+  background: var(--blockstitch-glass-bg);
   cursor: grab;
   touch-action: none;
 }
@@ -1378,11 +1378,11 @@ body.sidebar-resizing {
    eased at the two corners instead of a hard right angle (plus a 4px
    chamfer on the row's four outer corners). Every coordinate below is that
    fixed shape hand-plotted in px — it doesn't scale with
-   --bw-connector-cut-width/--bw-connector-cut-inset, those tokens only drive
+   --blockstitch-connector-cut-width/--blockstitch-connector-cut-inset, those tokens only drive
    layout spacing (padding, tab reserve) elsewhere.
 
    Rows stack with a plain `gap: 0` (see .strand-body). The tab needs real
-   pixels to occupy, so each row reserves --bw-connector-notch-depth of
+   pixels to occupy, so each row reserves --blockstitch-connector-notch-depth of
    padding-bottom, then pulls back with a matching negative margin so nothing
    about the layout looks any different from a gapless list — the two
    canceling exactly is what makes two rows touch with zero visible seam
@@ -1438,34 +1438,34 @@ body.sidebar-resizing {
    only for the soft elevation shadow, unrelated to any of this. */
 .instruction-row {
   display: block;
-  margin-bottom: calc(-1 * var(--bw-connector-notch-depth));
+  margin-bottom: calc(-1 * var(--blockstitch-connector-notch-depth));
   position: relative;
   cursor: grab;
   touch-action: none;
-  transition: filter var(--bw-dur-fast) var(--bw-ease-standard);
-  filter: drop-shadow(var(--bw-shadow-sm));
+  transition: filter var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
+  filter: drop-shadow(var(--blockstitch-shadow-sm));
 }
 .instruction-row::before {
   content: '';
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: var(--bw-border);
+  background: var(--blockstitch-border);
   pointer-events: none;
   clip-path: polygon(
     4px 0, 13.5px 0, 16.5px 2px, 19.5px 6px, 22.5px 8px, 31.5px 8px, 34.5px 6px, 37.5px 2px, 40.5px 0,
     calc(100% - 4px) 0, 100% 4px,
-    100% calc(100% - var(--bw-connector-notch-depth) - 4px),
-    calc(100% - 4px) calc(100% - var(--bw-connector-notch-depth)),
-    40.5px calc(100% - var(--bw-connector-notch-depth)),
-    37.5px calc(100% - var(--bw-connector-notch-depth) + 2px),
-    34.5px calc(100% - var(--bw-connector-notch-depth) + 6px),
+    100% calc(100% - var(--blockstitch-connector-notch-depth) - 4px),
+    calc(100% - 4px) calc(100% - var(--blockstitch-connector-notch-depth)),
+    40.5px calc(100% - var(--blockstitch-connector-notch-depth)),
+    37.5px calc(100% - var(--blockstitch-connector-notch-depth) + 2px),
+    34.5px calc(100% - var(--blockstitch-connector-notch-depth) + 6px),
     31.5px 100%, 22.5px 100%,
-    19.5px calc(100% - var(--bw-connector-notch-depth) + 6px),
-    16.5px calc(100% - var(--bw-connector-notch-depth) + 2px),
-    13.5px calc(100% - var(--bw-connector-notch-depth)),
-    4px calc(100% - var(--bw-connector-notch-depth)),
-    0 calc(100% - var(--bw-connector-notch-depth) - 4px), 0 4px
+    19.5px calc(100% - var(--blockstitch-connector-notch-depth) + 6px),
+    16.5px calc(100% - var(--blockstitch-connector-notch-depth) + 2px),
+    13.5px calc(100% - var(--blockstitch-connector-notch-depth)),
+    4px calc(100% - var(--blockstitch-connector-notch-depth)),
+    0 calc(100% - var(--blockstitch-connector-notch-depth) - 4px), 0 4px
   );
 }
 /* The backer — see the big comment above for why this shrinks inward
@@ -1479,35 +1479,35 @@ body.sidebar-resizing {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: var(--bw-bg2);
+  background: var(--blockstitch-bg2);
   pointer-events: none;
   clip-path: polygon(
     4.6px 1.5px, 13px 1.5px, 15.5px 3.1px, 18.5px 7.1px, 22px 9.5px, 32px 9.5px, 35.5px 7.1px, 38.5px 3.1px, 41px 1.5px,
     calc(100% - 4.6px) 1.5px, calc(100% - 1.5px) 4.6px,
-    calc(100% - 1.5px) calc(100% - var(--bw-connector-notch-depth) - 4.6px),
-    calc(100% - 4.6px) calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    40px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    36.5px calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    33.5px calc(100% - var(--bw-connector-notch-depth) + 4.9px),
+    calc(100% - 1.5px) calc(100% - var(--blockstitch-connector-notch-depth) - 4.6px),
+    calc(100% - 4.6px) calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    40px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    36.5px calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    33.5px calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
     31px calc(100% - 1.5px), 23px calc(100% - 1.5px),
-    20.5px calc(100% - var(--bw-connector-notch-depth) + 4.9px),
-    17.5px calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    14px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    4.6px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    1.5px calc(100% - var(--bw-connector-notch-depth) - 4.6px), 1.5px 4.6px
+    20.5px calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
+    17.5px calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    14px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    4.6px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    1.5px calc(100% - var(--blockstitch-connector-notch-depth) - 4.6px), 1.5px 4.6px
   );
 }
 .instruction-row:hover {
-  /* Rows overlap their neighbor by --bw-connector-notch-depth (see above) and
+  /* Rows overlap their neighbor by --blockstitch-connector-notch-depth (see above) and
      stack in DOM order when z-index is auto, so without this the row below
      (painted later) would cover the bottom half of this row's accent
      outline. A positive z-index lifts the hovered row above both
      neighbors regardless of DOM order. */
   z-index: 1;
-  filter: drop-shadow(var(--bw-shadow-sm));
+  filter: drop-shadow(var(--blockstitch-shadow-sm));
 }
 .instruction-row:hover::before {
-  background: var(--bw-accent);
+  background: var(--blockstitch-accent);
 }
 
 /* The clipped puzzle-piece silhouette itself — background, blur, and the
@@ -1522,28 +1522,28 @@ body.sidebar-resizing {
   align-items: center;
   gap: 8px;
   min-height: 60px;
-  padding: 6px var(--bw-spacing) calc(6px + var(--bw-connector-notch-depth))
-    calc(var(--bw-connector-cut-inset) + var(--bw-connector-cut-width) + 8px);
+  padding: 6px var(--blockstitch-spacing) calc(6px + var(--blockstitch-connector-notch-depth))
+    calc(var(--blockstitch-connector-cut-inset) + var(--blockstitch-connector-cut-width) + 8px);
   box-sizing: border-box;
-  background: var(--bw-glass-bg-strong);
-  backdrop-filter: blur(var(--bw-glass-blur));
-  -webkit-backdrop-filter: blur(var(--bw-glass-blur));
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-glass-bg-strong);
+  backdrop-filter: blur(var(--blockstitch-glass-blur));
+  -webkit-backdrop-filter: blur(var(--blockstitch-glass-blur));
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 
   clip-path: polygon(
     4.6px 1.5px, 13px 1.5px, 15.5px 3.1px, 18.5px 7.1px, 22px 9.5px, 32px 9.5px, 35.5px 7.1px, 38.5px 3.1px, 41px 1.5px,
     calc(100% - 4.6px) 1.5px, calc(100% - 1.5px) 4.6px,
-    calc(100% - 1.5px) calc(100% - var(--bw-connector-notch-depth) - 4.6px),
-    calc(100% - 4.6px) calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    40px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    36.5px calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    33.5px calc(100% - var(--bw-connector-notch-depth) + 4.9px),
+    calc(100% - 1.5px) calc(100% - var(--blockstitch-connector-notch-depth) - 4.6px),
+    calc(100% - 4.6px) calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    40px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    36.5px calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    33.5px calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
     31px calc(100% - 1.5px), 23px calc(100% - 1.5px),
-    20.5px calc(100% - var(--bw-connector-notch-depth) + 4.9px),
-    17.5px calc(100% - var(--bw-connector-notch-depth) + 0.9px),
-    14px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    4.6px calc(100% - var(--bw-connector-notch-depth) - 1.5px),
-    1.5px calc(100% - var(--bw-connector-notch-depth) - 4.6px), 1.5px 4.6px
+    20.5px calc(100% - var(--blockstitch-connector-notch-depth) + 4.9px),
+    17.5px calc(100% - var(--blockstitch-connector-notch-depth) + 0.9px),
+    14px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    4.6px calc(100% - var(--blockstitch-connector-notch-depth) - 1.5px),
+    1.5px calc(100% - var(--blockstitch-connector-notch-depth) - 4.6px), 1.5px 4.6px
   );
 }
 /* Child combinator, not descendant — `.instruction-row-wrap` is `:hover`
@@ -1554,7 +1554,7 @@ body.sidebar-resizing {
    blocks flash on hovering the outer If/If-Else block). `.instruction-shape`
    is always a direct child of its own `.instruction-row`, so `>` scopes
    this to exactly that row without affecting anything nested inside it. */
-.instruction-row:hover > .instruction-shape { background: var(--bw-bg3); }
+.instruction-row:hover > .instruction-shape { background: var(--blockstitch-bg3); }
 
 .instruction-content {
   display: flex;
@@ -1564,7 +1564,7 @@ body.sidebar-resizing {
 }
 
 /* Sits in the left padding .instruction-shape reserves (see its
-   padding-left, sized off --bw-connector-cut-inset/--bw-connector-cut-width).
+   padding-left, sized off --blockstitch-connector-cut-inset/--blockstitch-connector-cut-width).
    Centered on 21px — the same x the top/bottom notch geometry is centered
    on — so it lines up with the puzzle-piece connector rather than the
    padding box. */
@@ -1574,12 +1574,12 @@ body.sidebar-resizing {
   /* .instruction-shape's padding is asymmetric (6px top vs 6+notch-depth
      bottom, to reserve room for the tab) so flex-centered content sits
      notch-depth/2 above true 50% — match that or the icon reads low. */
-  top: calc(50% - (var(--bw-connector-notch-depth) / 2));
+  top: calc(50% - (var(--blockstitch-connector-notch-depth) / 2));
   transform: translate(-50%, -50%);
   width: 16px;
   height: 16px;
   flex-shrink: 0;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
   pointer-events: none;
 }
 /* Cap rows (Return) have symmetric top/bottom padding on .instruction-shape
@@ -1587,7 +1587,7 @@ body.sidebar-resizing {
    above is wrong here — it just shifts the icon above true center. */
 .instruction-row-cap .instruction-type-icon { top: 50%; }
 .instruction-label {
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
   white-space: nowrap;
   font-size: 12px;
 }
@@ -1623,13 +1623,13 @@ body.sidebar-resizing {
   position: relative;
   gap: 2px;
   padding: 2px 6px;
-  border-color: var(--bw-glass-border);
-  background: linear-gradient(160deg, var(--bw-bg3), var(--bw-bg2));
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm);
+  border-color: var(--blockstitch-glass-border);
+  background: linear-gradient(160deg, var(--blockstitch-bg3), var(--blockstitch-bg2));
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm);
   cursor: grab;
   touch-action: none;
 }
-.value-card-shape:hover { border-color: var(--bw-accent); }
+.value-card-shape:hover { border-color: var(--blockstitch-accent); }
 .value-card-shape:active { cursor: grabbing; }
 .value-card-shape .value-card-shape,
 .value-card-shape .value-card-shape-bool,
@@ -1651,9 +1651,9 @@ body.sidebar-resizing {
    gets (e.g. one holding a nested multi-line arg) — a fixed-px run made a
    short block's point look right and a tall block's point blunt, since
    the *rise* (half the block's own height) grew while the run didn't.
-   `--bw-bh` is the block's actual measured height, kept in sync by a
+   `--blockstitch-bh` is the block's actual measured height, kept in sync by a
    `ResizeObserver` in ValueBlock.vue (only while `isBool` — see its
-   `watchEffect`), and `--bw-notch` is that height scaled by a fixed ratio, so
+   `watchEffect`), and `--blockstitch-notch` is that height scaled by a fixed ratio, so
    run and rise grow together and the angle never changes — the point
    itself stays a single vertex (no straight edge down the middle), it
    just lands further from center on a taller block. `min(…, 50%)` only
@@ -1704,7 +1704,7 @@ body.sidebar-resizing {
   isolation: isolate;
   gap: 2px;
   padding: 2px 12px;
-  --bw-notch: min(calc(var(--bw-bh, 25px) * 0.32), 50%);
+  --blockstitch-notch: min(calc(var(--blockstitch-bh, 25px) * 0.32), 50%);
 }
 .value-card-shape-bool {
   cursor: grab;
@@ -1738,7 +1738,7 @@ body.sidebar-resizing {
 }
 /* Two background layers, not one: a real `border` (as `.value-card-shape`
    uses) paints its translucent color OVER that same element's own
-   background — `--bw-glass-border` is 8% white, so it blends bright against
+   background — `--blockstitch-glass-border` is 8% white, so it blends bright against
    the light bg3→bg2 gradient sitting right underneath it. `::before` sits
    *behind* `::after` (the fill), so without a copy of that same gradient
    underneath its own tint, the 1px ring where `::before` shows through
@@ -1753,12 +1753,12 @@ body.sidebar-resizing {
 .value-card-shape-bool::before,
 .value-hex-blank::before {
   z-index: -2;
-  background: linear-gradient(var(--bw-glass-border), var(--bw-glass-border)), linear-gradient(160deg, var(--bw-bg3), var(--bw-bg2));
-  clip-path: polygon(var(--bw-notch) 0%, calc(100% - var(--bw-notch)) 0%, 100% 50%, calc(100% - var(--bw-notch)) 100%, var(--bw-notch) 100%, 0% 50%);
+  background: linear-gradient(var(--blockstitch-glass-border), var(--blockstitch-glass-border)), linear-gradient(160deg, var(--blockstitch-bg3), var(--blockstitch-bg2));
+  clip-path: polygon(var(--blockstitch-notch) 0%, calc(100% - var(--blockstitch-notch)) 0%, 100% 50%, calc(100% - var(--blockstitch-notch)) 100%, var(--blockstitch-notch) 100%, 0% 50%);
 }
 /* Mitered 1px inward from `::before`'s polygon above. The flat top/bottom
    edges just move down/up 1px, same as any border; the two diagonals (run
-   `--bw-notch`, rise half the block's height, always the same 0.64 ratio —
+   `--blockstitch-notch`, rise half the block's height, always the same 0.64 ratio —
    see above) push their meeting point in by `1.187px` (= 1px·√(1+0.64²))
    and nudge the flat-edge corners out by `0.547px` (= 1.187px − 1px·0.64)
    — both constants derived from that fixed ratio, so they hold at every
@@ -1766,20 +1766,20 @@ body.sidebar-resizing {
 .value-card-shape-bool::after,
 .value-hex-blank::after {
   z-index: -1;
-  background: linear-gradient(160deg, var(--bw-bg3), var(--bw-bg2));
-  box-shadow: var(--bw-bevel-top);
+  background: linear-gradient(160deg, var(--blockstitch-bg3), var(--blockstitch-bg2));
+  box-shadow: var(--blockstitch-bevel-top);
   clip-path: polygon(
-    calc(var(--bw-notch) + 0.547px) 1px, calc(100% - var(--bw-notch) - 0.547px) 1px,
+    calc(var(--blockstitch-notch) + 0.547px) 1px, calc(100% - var(--blockstitch-notch) - 0.547px) 1px,
     calc(100% - 1.187px) 50%,
-    calc(100% - var(--bw-notch) - 0.547px) calc(100% - 1px), calc(var(--bw-notch) + 0.547px) calc(100% - 1px),
+    calc(100% - var(--blockstitch-notch) - 0.547px) calc(100% - 1px), calc(var(--blockstitch-notch) + 0.547px) calc(100% - 1px),
     1.187px 50%
   );
 }
-.value-card-shape-bool:hover::before { background: var(--bw-accent); }
+.value-card-shape-bool:hover::before { background: var(--blockstitch-accent); }
 .value-card-shape-bool:active { cursor: grabbing; }
 .value-op {
   font-weight: 600;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
   padding: 0 1px;
   white-space: nowrap;
 }
@@ -1791,14 +1791,14 @@ body.sidebar-resizing {
    `::before`/`::after` layers instead), so it gets its own rule right
    below, same idea as that shape's `:hover::before`. */
 .value-drop-target {
-  border-color: var(--bw-accent);
+  border-color: var(--blockstitch-accent);
 }
 .value-drop-target.value-card-shape {
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm), var(--bw-glow-accent);
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm), var(--blockstitch-glow-accent);
 }
 .value-drop-target.value-card-shape-bool::before,
 .value-drop-target.value-hex-blank::before {
-  background: var(--bw-accent);
+  background: var(--blockstitch-accent);
 }
 
 /* Click-to-sample-evaluate tooltip (ValueBlock.vue's `preview`, driven by
@@ -1813,12 +1813,12 @@ body.sidebar-resizing {
   transform: translateX(-50%);
   z-index: 21;
   padding: 3px 8px;
-  border-radius: var(--bw-radius);
-  border: 1px solid var(--bw-glass-border);
-  background: var(--bw-glass-bg-strong);
-  backdrop-filter: blur(var(--bw-glass-blur));
-  box-shadow: var(--bw-shadow-md);
-  color: var(--bw-text);
+  border-radius: var(--blockstitch-radius);
+  border: 1px solid var(--blockstitch-glass-border);
+  background: var(--blockstitch-glass-bg-strong);
+  backdrop-filter: blur(var(--blockstitch-glass-blur));
+  box-shadow: var(--blockstitch-shadow-md);
+  color: var(--blockstitch-text);
   font-size: 12px;
   font-weight: 600;
   /* `pre-wrap` (not `nowrap`) so an embedded newline/tab from the
@@ -1827,11 +1827,11 @@ body.sidebar-resizing {
   white-space: pre-wrap;
   max-width: 260px;
   pointer-events: none;
-  animation: value-eval-tooltip-in var(--bw-dur-base) var(--bw-ease-standard);
+  animation: value-eval-tooltip-in var(--blockstitch-dur-base) var(--blockstitch-ease-standard);
 }
 .value-eval-tooltip-error {
-  border-color: var(--bw-red);
-  color: var(--bw-red);
+  border-color: var(--blockstitch-red);
+  color: var(--blockstitch-red);
 }
 @keyframes value-eval-tooltip-in {
   from { opacity: 0; transform: translateX(-50%) translateY(3px); }
@@ -1854,12 +1854,12 @@ body.sidebar-resizing {
   display: flex;
   flex-direction: column;
   width: 220px;
-  border-radius: var(--bw-radius);
-  background: var(--bw-glass-bg-strong);
-  backdrop-filter: blur(var(--bw-glass-blur));
-  -webkit-backdrop-filter: blur(var(--bw-glass-blur));
-  border: 1px solid var(--bw-glass-border);
-  box-shadow: var(--bw-shadow-sm);
+  border-radius: var(--blockstitch-radius);
+  background: var(--blockstitch-glass-bg-strong);
+  backdrop-filter: blur(var(--blockstitch-glass-blur));
+  -webkit-backdrop-filter: blur(var(--blockstitch-glass-blur));
+  border: 1px solid var(--blockstitch-glass-border);
+  box-shadow: var(--blockstitch-shadow-sm);
   overflow: hidden;
 }
 .comment-card-collapsed { width: auto; }
@@ -1870,7 +1870,7 @@ body.sidebar-resizing {
   gap: 6px;
   padding: 6px 6px 6px 8px;
   cursor: grab;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
   user-select: none;
 }
 .comment-card-header:active { cursor: grabbing; }
@@ -1891,20 +1891,20 @@ body.sidebar-resizing {
   height: 20px;
   min-height: unset;
   padding: 0;
-  border-radius: var(--bw-radius);
+  border-radius: var(--blockstitch-radius);
   background: transparent;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
 }
-.comment-card-btn:hover { background: var(--bw-hover-overlay); color: var(--bw-text); }
+.comment-card-btn:hover { background: var(--blockstitch-hover-overlay); color: var(--blockstitch-text); }
 .comment-card-btn svg { width: 14px; height: 14px; }
-.comment-card-delete:hover { color: var(--bw-red); }
+.comment-card-delete:hover { color: var(--blockstitch-red); }
 
 .comment-card-body {
   resize: none;
   border: none;
-  border-top: 1px solid var(--bw-glass-border);
+  border-top: 1px solid var(--blockstitch-glass-border);
   background: transparent;
-  color: var(--bw-text);
+  color: var(--blockstitch-text);
   font: inherit;
   font-size: 13px;
   line-height: 1.4;
@@ -1914,7 +1914,7 @@ body.sidebar-resizing {
   overflow-y: auto;
 }
 .comment-card-body:focus { outline: none; }
-.comment-card-body::placeholder { color: var(--bw-text-dim); }
+.comment-card-body::placeholder { color: var(--blockstitch-text-dim); }
 
 /* Bare wrapper for a dragged comment card — same technique as
    .strand-drag-ghost, but the card keeps its own look at rest. */
@@ -1941,7 +1941,7 @@ body.sidebar-resizing {
   pointer-events: none;
 }
 .comment-connector-line {
-  stroke: var(--bw-border);
+  stroke: var(--blockstitch-border);
   stroke-width: 1.5px;
   stroke-dasharray: 4 3;
 }
@@ -1955,8 +1955,8 @@ body.sidebar-resizing {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--bw-red);
-  box-shadow: 0 0 4px rgba(var(--bw-red-rgb), 0.7);
+  background: var(--blockstitch-red);
+  box-shadow: 0 0 4px rgba(var(--blockstitch-red-rgb), 0.7);
   pointer-events: none;
 }
 
@@ -1988,7 +1988,7 @@ body.sidebar-resizing {
   opacity: 0.4;
 }
 .strand-snap-preview .instruction-shape {
-  background: rgba(var(--bw-accent-rgb), 0.2);
+  background: rgba(var(--blockstitch-accent-rgb), 0.2);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
@@ -1998,7 +1998,7 @@ body.sidebar-resizing {
 }
 .strand-snap-preview::after,
 .strand-snap-preview .instruction-row::after {
-  background: rgba(var(--bw-accent-rgb), 0.15);
+  background: rgba(var(--blockstitch-accent-rgb), 0.15);
 }
 .strand-snap-preview .instruction-content {
   opacity: 0;
@@ -2024,8 +2024,8 @@ body.sidebar-resizing {
   display: flex;
   gap: 8px;
   align-items: center;
-  padding: var(--bw-spacing-sm) var(--bw-spacing);
-  border-top: 1px solid var(--bw-glass-border);
+  padding: var(--blockstitch-spacing-sm) var(--blockstitch-spacing);
+  border-top: 1px solid var(--blockstitch-glass-border);
   flex-shrink: 0;
 }
 
@@ -2037,40 +2037,40 @@ body.sidebar-resizing {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: var(--bw-spacing-sm) var(--bw-spacing);
-  background: var(--bw-glass-bg);
-  backdrop-filter: blur(var(--bw-glass-blur));
-  -webkit-backdrop-filter: blur(var(--bw-glass-blur));
-  border-bottom: 1px solid var(--bw-glass-border);
+  padding: var(--blockstitch-spacing-sm) var(--blockstitch-spacing);
+  background: var(--blockstitch-glass-bg);
+  backdrop-filter: blur(var(--blockstitch-glass-blur));
+  -webkit-backdrop-filter: blur(var(--blockstitch-glass-blur));
+  border-bottom: 1px solid var(--blockstitch-glass-border);
   flex-shrink: 0;
 }
 .settings-scroll {
   flex: 1;
   overflow-y: auto;
-  padding: var(--bw-spacing);
+  padding: var(--blockstitch-spacing);
   display: flex;
   flex-direction: column;
-  gap: var(--bw-spacing);
+  gap: var(--blockstitch-spacing);
   scrollbar-width: thin;
-  scrollbar-color: var(--bw-scrollbar-thumb) transparent;
+  scrollbar-color: var(--blockstitch-scrollbar-thumb) transparent;
 }
 .settings-scroll::-webkit-scrollbar { width: 10px; }
 .settings-scroll::-webkit-scrollbar-track { background: transparent; }
 .settings-scroll::-webkit-scrollbar-thumb {
-  background: var(--bw-scrollbar-thumb);
+  background: var(--blockstitch-scrollbar-thumb);
   border-radius: 8px;
   border: 2px solid transparent;
   background-clip: padding-box;
 }
 .settings-section {
   flex-shrink: 0;
-  border: 1px solid var(--bw-glass-border);
-  border-radius: var(--bw-radius-lg);
+  border: 1px solid var(--blockstitch-glass-border);
+  border-radius: var(--blockstitch-radius-lg);
   overflow: hidden;
-  background: var(--bw-glass-bg);
-  backdrop-filter: blur(var(--bw-glass-blur));
-  -webkit-backdrop-filter: blur(var(--bw-glass-blur));
-  box-shadow: var(--bw-shadow-sm);
+  background: var(--blockstitch-glass-bg);
+  backdrop-filter: blur(var(--blockstitch-glass-blur));
+  -webkit-backdrop-filter: blur(var(--blockstitch-glass-blur));
+  box-shadow: var(--blockstitch-shadow-sm);
 }
 .settings-section-title {
   display: flex;
@@ -2078,9 +2078,9 @@ body.sidebar-resizing {
   gap: 6px;
   padding: 8px 12px;
   font-weight: 600;
-  background: var(--bw-glass-bg-strong);
-  border-bottom: 1px solid var(--bw-glass-border);
-  color: var(--bw-text-dim);
+  background: var(--blockstitch-glass-bg-strong);
+  border-bottom: 1px solid var(--blockstitch-glass-border);
+  color: var(--blockstitch-text-dim);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 11px;
@@ -2091,7 +2091,7 @@ body.sidebar-resizing {
   align-items: center;
   gap: 8px;
   padding: 8px 12px;
-  border-bottom: 1px solid var(--bw-glass-border);
+  border-bottom: 1px solid var(--blockstitch-glass-border);
 }
 .settings-row:last-child { border-bottom: none; }
 .settings-row-label {
@@ -2100,7 +2100,7 @@ body.sidebar-resizing {
 }
 .settings-row-hint {
   font-size: 11px;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
   margin-left: 4px;
 }
 
@@ -2109,45 +2109,45 @@ body.sidebar-resizing {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  background: var(--bw-yellow-bg);
-  border: 1px solid var(--bw-yellow-border);
-  color: var(--bw-yellow);
+  background: var(--blockstitch-yellow-bg);
+  border: 1px solid var(--blockstitch-yellow-border);
+  color: var(--blockstitch-yellow);
   padding: 8px 12px;
-  border-radius: var(--bw-radius-lg);
+  border-radius: var(--blockstitch-radius-lg);
   font-size: 13px;
   line-height: 1.5;
-  box-shadow: var(--bw-shadow-sm);
+  box-shadow: var(--blockstitch-shadow-sm);
 }
 .warning-banner svg { width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px; }
-.warning-banner.banner-enter { animation: bannerEnter var(--bw-dur-slow) var(--bw-ease-spring); }
+.warning-banner.banner-enter { animation: bannerEnter var(--blockstitch-dur-slow) var(--blockstitch-ease-spring); }
 @keyframes bannerEnter {
   from { opacity: 0; transform: translateY(-6px) scale(0.98); }
   to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 /* ── Loop & Record indicator colors ─────────────────────────────────────── */
-.btn-record { color: var(--bw-red); border-color: var(--bw-red); }
-.btn-record:hover:not(:disabled) { background: rgba(var(--bw-red-rgb), 0.12); }
+.btn-record { color: var(--blockstitch-red); border-color: var(--blockstitch-red); }
+.btn-record:hover:not(:disabled) { background: rgba(var(--blockstitch-red-rgb), 0.12); }
 /* Lucide's "circle" is a hollow stroke ring by default — fill it so idle
    Record reads as a proper solid record dot instead of an outline. */
 .btn-record .btn-icon-glyph svg circle,
 .btn-active-record .btn-icon-glyph svg circle {
   fill: currentColor;
 }
-.btn-record-countdown { animation: recordPulseSoft 1s var(--bw-ease-standard) infinite; }
+.btn-record-countdown { animation: recordPulseSoft 1s var(--blockstitch-ease-standard) infinite; }
 .btn-active-record {
-  color: var(--bw-text);
-  background: linear-gradient(160deg, rgba(var(--bw-red-rgb), 0.35), rgba(var(--bw-red-rgb), 0.18));
-  border-color: var(--bw-red);
-  animation: recordPulse 1.6s var(--bw-ease-standard) infinite;
+  color: var(--blockstitch-text);
+  background: linear-gradient(160deg, rgba(var(--blockstitch-red-rgb), 0.35), rgba(var(--blockstitch-red-rgb), 0.18));
+  border-color: var(--blockstitch-red);
+  animation: recordPulse 1.6s var(--blockstitch-ease-standard) infinite;
 }
 @keyframes recordPulse {
-  0%, 100% { box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm), 0 0 0 0 rgba(var(--bw-red-rgb), 0.5); }
-  50%      { box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm), 0 0 0 8px rgba(var(--bw-red-rgb), 0); }
+  0%, 100% { box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm), 0 0 0 0 rgba(var(--blockstitch-red-rgb), 0.5); }
+  50%      { box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm), 0 0 0 8px rgba(var(--blockstitch-red-rgb), 0); }
 }
 @keyframes recordPulseSoft {
-  0%, 100% { box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm), 0 0 0 0 rgba(var(--bw-red-rgb), 0.35); }
-  50%      { box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm), 0 0 0 5px rgba(var(--bw-red-rgb), 0); }
+  0%, 100% { box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm), 0 0 0 0 rgba(var(--blockstitch-red-rgb), 0.35); }
+  50%      { box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm), 0 0 0 5px rgba(var(--blockstitch-red-rgb), 0); }
 }
 
 /* ── Recording overlay ────────────────────────────────────────────────────── */
@@ -2160,17 +2160,17 @@ body.sidebar-resizing {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  background: color-mix(in srgb, var(--bw-bg) 72%, transparent);
+  background: color-mix(in srgb, var(--blockstitch-bg) 72%, transparent);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   pointer-events: none;
-  animation: overlayFadeIn var(--bw-dur-base) var(--bw-ease-standard);
+  animation: overlayFadeIn var(--blockstitch-dur-base) var(--blockstitch-ease-standard);
 }
 .recording-overlay svg {
   width: 42px;
   height: 42px;
-  color: var(--bw-red);
-  animation: recordPulse 1.6s var(--bw-ease-standard) infinite;
+  color: var(--blockstitch-red);
+  animation: recordPulse 1.6s var(--blockstitch-ease-standard) infinite;
 }
 .recording-overlay span {
   font-size: 14px;
@@ -2179,7 +2179,7 @@ body.sidebar-resizing {
 .recording-overlay-hint {
   font-size: 11px;
   font-weight: 400;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
   margin-top: 2px;
 }
 @keyframes overlayFadeIn {
@@ -2195,21 +2195,21 @@ body.sidebar-resizing {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: color-mix(in srgb, var(--bw-bg) 55%, transparent);
+  background: color-mix(in srgb, var(--blockstitch-bg) 55%, transparent);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  animation: overlayFadeIn var(--bw-dur-fast) var(--bw-ease-standard);
+  animation: overlayFadeIn var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
 .modal-panel {
   display: flex;
   flex-direction: column;
-  gap: var(--bw-spacing-sm);
+  gap: var(--blockstitch-spacing-sm);
   min-width: 280px;
-  padding: var(--bw-spacing);
-  background: var(--bw-bg2);
-  border: 1px solid var(--bw-border);
-  border-radius: var(--bw-radius-lg);
-  box-shadow: var(--bw-shadow-lg);
+  padding: var(--blockstitch-spacing);
+  background: var(--blockstitch-bg2);
+  border: 1px solid var(--blockstitch-border);
+  border-radius: var(--blockstitch-radius-lg);
+  box-shadow: var(--blockstitch-shadow-lg);
 }
 .modal-title {
   font-size: 15px;
@@ -2221,8 +2221,8 @@ body.sidebar-resizing {
 .modal-actions {
   display: flex;
   justify-content: flex-end;
-  gap: var(--bw-spacing-sm);
-  margin-top: var(--bw-spacing-sm);
+  gap: var(--blockstitch-spacing-sm);
+  margin-top: var(--blockstitch-spacing-sm);
 }
 
 /* ── "Open App" picker (AppSelectorDialog.vue) ──────────────────────────── */
@@ -2230,20 +2230,20 @@ body.sidebar-resizing {
 .app-selector-search {
   display: flex;
   align-items: center;
-  gap: var(--bw-spacing-sm);
+  gap: var(--blockstitch-spacing-sm);
   padding: 6px 10px;
-  background: var(--bw-bg3);
-  border: 1px solid var(--bw-border);
-  border-radius: var(--bw-radius);
+  background: var(--blockstitch-bg3);
+  border: 1px solid var(--blockstitch-border);
+  border-radius: var(--blockstitch-radius);
 }
-.app-selector-search svg { color: var(--bw-text-dim); flex-shrink: 0; }
+.app-selector-search svg { color: var(--blockstitch-text-dim); flex-shrink: 0; }
 .app-selector-search input {
   flex: 1;
   min-width: 0;
   border: none;
   outline: none;
   background: transparent;
-  color: var(--bw-text);
+  color: var(--blockstitch-text);
   font-size: 13px;
 }
 .app-selector-grid {
@@ -2255,17 +2255,17 @@ body.sidebar-resizing {
   overflow-y: auto;
   padding: 4px;
   scrollbar-width: thin;
-  scrollbar-color: var(--bw-scrollbar-thumb) transparent;
+  scrollbar-color: var(--blockstitch-scrollbar-thumb) transparent;
 }
 .app-selector-grid::-webkit-scrollbar { width: 10px; }
 .app-selector-grid::-webkit-scrollbar-track { background: transparent; }
 .app-selector-grid::-webkit-scrollbar-thumb {
-  background: var(--bw-scrollbar-thumb);
+  background: var(--blockstitch-scrollbar-thumb);
   border-radius: 8px;
   border: 2px solid transparent;
   background-clip: padding-box;
 }
-.app-selector-grid::-webkit-scrollbar-thumb:hover { background: var(--bw-scrollbar-thumb-hover); background-clip: padding-box; }
+.app-selector-grid::-webkit-scrollbar-thumb:hover { background: var(--blockstitch-scrollbar-thumb-hover); background-clip: padding-box; }
 .app-selector-item {
   display: flex;
   flex-direction: column;
@@ -2279,12 +2279,12 @@ body.sidebar-resizing {
   min-width: 0;
   background: none;
   border: none;
-  border-radius: var(--bw-radius);
+  border-radius: var(--blockstitch-radius);
   cursor: pointer;
   text-align: center;
-  color: var(--bw-text);
+  color: var(--blockstitch-text);
 }
-.app-selector-item:hover { background: var(--bw-hover-overlay); }
+.app-selector-item:hover { background: var(--blockstitch-hover-overlay); }
 .app-selector-item-icon {
   width: 40px;
   height: 40px;
@@ -2295,9 +2295,9 @@ body.sidebar-resizing {
   height: 40px;
   padding: 8px;
   box-sizing: border-box;
-  color: var(--bw-text-dim);
-  background: var(--bw-bg3);
-  border-radius: var(--bw-radius);
+  color: var(--blockstitch-text-dim);
+  background: var(--blockstitch-bg3);
+  border-radius: var(--blockstitch-radius);
 }
 .app-selector-item-name {
   width: 100%;
@@ -2310,7 +2310,7 @@ body.sidebar-resizing {
 .app-selector-empty {
   padding: 24px;
   text-align: center;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
   font-size: 13px;
 }
 
@@ -2322,7 +2322,7 @@ body.sidebar-resizing {
   object-fit: contain;
   flex-shrink: 0;
 }
-.open-app-icon-fallback { color: var(--bw-text-dim); flex-shrink: 0; }
+.open-app-icon-fallback { color: var(--blockstitch-text-dim); flex-shrink: 0; }
 .open-app-choose-btn {
   display: inline-flex;
   align-items: center;
@@ -2341,20 +2341,20 @@ body.sidebar-resizing {
 .warning-panel .modal-title {
   display: flex;
   align-items: center;
-  gap: var(--bw-spacing-sm);
+  gap: var(--blockstitch-spacing-sm);
 }
 .warning-icon {
-  color: var(--bw-yellow);
+  color: var(--blockstitch-yellow);
   flex-shrink: 0;
 }
 .danger-icon {
-  color: var(--bw-red);
+  color: var(--blockstitch-red);
   flex-shrink: 0;
 }
 .warning-panel p {
   margin: 0;
   font-size: 13px;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
 }
 
 /* ── "Make a Block"/"Edit Block" dialog ─────────────────────────────────── */
@@ -2364,23 +2364,23 @@ body.sidebar-resizing {
   align-items: center;
   justify-content: center;
   height: 140px;
-  padding: var(--bw-spacing);
+  padding: var(--blockstitch-spacing);
   overflow-x: auto;
   overflow-y: hidden;
   /* Same two-layer composite the main canvas uses (see .canvas-inner /
-     #macro-editor): a translucent glass wash over the flat `--bw-bg`, with the
-     dot pattern painted on top — not a flat `--bw-bg` fill, which reads
+     #macro-editor): a translucent glass wash over the flat `--blockstitch-bg`, with the
+     dot pattern painted on top — not a flat `--blockstitch-bg` fill, which reads
      noticeably darker than the glass-tinted canvas everywhere else. Listed
      background-images paint top-first, and the shorthand's plain color
      always paints last regardless of position, so this stacks as: dots,
      then glass wash, then base color. */
-  background: var(--bw-bg);
+  background: var(--blockstitch-bg);
   background-image:
-    radial-gradient(circle, var(--bw-glass-border) 1.2px, transparent 1.2px),
-    linear-gradient(var(--bw-glass-bg), var(--bw-glass-bg));
+    radial-gradient(circle, var(--blockstitch-glass-border) 1.2px, transparent 1.2px),
+    linear-gradient(var(--blockstitch-glass-bg), var(--blockstitch-glass-bg));
   background-size: 22px 22px, 100% 100%;
-  border: 1px solid var(--bw-border);
-  border-radius: var(--bw-radius);
+  border: 1px solid var(--blockstitch-border);
+  border-radius: var(--blockstitch-radius);
 }
 .make-block-preview {
   display: flex;
@@ -2389,12 +2389,12 @@ body.sidebar-resizing {
   align-items: center;
   gap: 2px;
   padding: 10px 14px;
-  background: var(--bw-glass-bg-strong);
-  backdrop-filter: blur(var(--bw-glass-blur));
-  -webkit-backdrop-filter: blur(var(--bw-glass-blur));
-  border: 1px solid var(--bw-glass-border);
-  border-radius: var(--bw-radius-lg);
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm);
+  background: var(--blockstitch-glass-bg-strong);
+  backdrop-filter: blur(var(--blockstitch-glass-blur));
+  -webkit-backdrop-filter: blur(var(--blockstitch-glass-blur));
+  border: 1px solid var(--blockstitch-glass-border);
+  border-radius: var(--blockstitch-radius-lg);
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm);
 }
 .make-block-piece {
   display: inline-flex;
@@ -2405,8 +2405,8 @@ body.sidebar-resizing {
   border-radius: 5px;
   cursor: text;
 }
-.make-block-piece:hover { background: var(--bw-hover-overlay); }
-.make-block-piece-selected { background: var(--bw-hover-overlay); box-shadow: 0 0 0 1.5px var(--bw-accent); }
+.make-block-piece:hover { background: var(--blockstitch-hover-overlay); }
+.make-block-piece-selected { background: var(--blockstitch-hover-overlay); box-shadow: 0 0 0 1.5px var(--blockstitch-accent); }
 /* The text span is always rendered — even while editing (just hidden) — so
    its box is always what reserves the piece's width. That box reflects the
    last-committed value, not whatever's being typed, so renaming never grows
@@ -2416,16 +2416,16 @@ body.sidebar-resizing {
 .make-block-piece-field { position: relative; display: inline-flex; align-items: center; }
 .make-block-piece-text {
   font-size: 13px;
-  color: var(--bw-text);
+  color: var(--blockstitch-text);
   white-space: nowrap;
 }
 .make-block-piece-text-hidden { visibility: hidden; }
 .make-block-piece-input {
-  border: 1px solid var(--bw-glass-border);
-  background: linear-gradient(160deg, var(--bw-bg3), var(--bw-bg2));
-  box-shadow: var(--bw-bevel-top);
+  border: 1px solid var(--blockstitch-glass-border);
+  background: linear-gradient(160deg, var(--blockstitch-bg3), var(--blockstitch-bg2));
+  box-shadow: var(--blockstitch-bevel-top);
 }
-.make-block-piece-input .make-block-piece-text { font-weight: 600; color: var(--bw-accent); }
+.make-block-piece-input .make-block-piece-text { font-weight: 600; color: var(--blockstitch-accent); }
 .make-block-piece-input-el {
   position: absolute;
   inset: 0;
@@ -2434,7 +2434,7 @@ body.sidebar-resizing {
   background: transparent;
   border: none;
   outline: none;
-  color: var(--bw-text);
+  color: var(--blockstitch-text);
 }
 
 /* Remove/move toolbar — floats above whichever piece is currently
@@ -2449,10 +2449,10 @@ body.sidebar-resizing {
   align-items: center;
   gap: 2px;
   padding: 2px;
-  background: var(--bw-bg2);
-  border: 1px solid var(--bw-glass-border);
-  border-radius: var(--bw-radius);
-  box-shadow: var(--bw-shadow-md);
+  background: var(--blockstitch-bg2);
+  border: 1px solid var(--blockstitch-glass-border);
+  border-radius: var(--blockstitch-radius);
+  box-shadow: var(--blockstitch-shadow-md);
 }
 .make-block-piece-toolbar button {
   display: inline-flex;
@@ -2464,20 +2464,20 @@ body.sidebar-resizing {
   min-height: 0;
   padding: 0;
   border: none;
-  border-radius: calc(var(--bw-radius) - 2px);
+  border-radius: calc(var(--blockstitch-radius) - 2px);
   background: transparent;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
   cursor: pointer;
 }
-.make-block-piece-toolbar button:hover:not(:disabled) { background: var(--bw-hover-overlay); color: var(--bw-text); }
+.make-block-piece-toolbar button:hover:not(:disabled) { background: var(--blockstitch-hover-overlay); color: var(--blockstitch-text); }
 .make-block-piece-toolbar button:disabled { opacity: 0.3; cursor: default; }
 .make-block-piece-toolbar svg { width: 13px; height: 13px; }
-.make-block-piece-remove:hover:not(:disabled) { color: var(--bw-red); }
+.make-block-piece-remove:hover:not(:disabled) { color: var(--blockstitch-red); }
 
 /* ── "Add an input"/"Add a label" buttons ───────────────────────────────── */
 .make-block-add-row {
   display: flex;
-  gap: var(--bw-spacing-sm);
+  gap: var(--blockstitch-spacing-sm);
 }
 .make-block-add-btn {
   display: flex;
@@ -2486,14 +2486,14 @@ body.sidebar-resizing {
   gap: 10px;
   min-height: 0;
   padding: 10px 12px;
-  background: var(--bw-bg2);
-  border: 1px solid var(--bw-glass-border);
-  border-radius: var(--bw-radius);
-  color: var(--bw-text);
+  background: var(--blockstitch-bg2);
+  border: 1px solid var(--blockstitch-glass-border);
+  border-radius: var(--blockstitch-radius);
+  color: var(--blockstitch-text);
   cursor: pointer;
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard), border-color var(--bw-dur-fast) var(--bw-ease-standard);
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard), border-color var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
-.make-block-add-btn:hover { background: var(--bw-hover-overlay); border-color: var(--bw-accent); }
+.make-block-add-btn:hover { background: var(--blockstitch-hover-overlay); border-color: var(--blockstitch-accent); }
 .make-block-add-preview {
   flex-shrink: 0;
   display: inline-flex;
@@ -2506,13 +2506,13 @@ body.sidebar-resizing {
 }
 .make-block-add-preview-input {
   font-weight: 600;
-  color: var(--bw-accent);
-  border: 1px solid var(--bw-glass-border);
+  color: var(--blockstitch-accent);
+  border: 1px solid var(--blockstitch-glass-border);
   border-radius: 5px;
-  background: linear-gradient(160deg, var(--bw-bg3), var(--bw-bg2));
-  box-shadow: var(--bw-bevel-top);
+  background: linear-gradient(160deg, var(--blockstitch-bg3), var(--blockstitch-bg2));
+  box-shadow: var(--blockstitch-bevel-top);
 }
-.make-block-add-preview-label { color: var(--bw-text); }
+.make-block-add-preview-label { color: var(--blockstitch-text); }
 .make-block-add-text {
   display: flex;
   flex-direction: column;
@@ -2521,19 +2521,19 @@ body.sidebar-resizing {
   text-align: left;
 }
 .make-block-add-title { font-size: 13px; font-weight: 600; }
-.make-block-add-sub { font-size: 11px; color: var(--bw-text-dim); }
+.make-block-add-sub { font-size: 11px; color: var(--blockstitch-text-dim); }
 .make-block-return-row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--bw-spacing-sm);
+  gap: var(--blockstitch-spacing-sm);
 }
 .make-block-radio {
   display: inline-flex;
   align-items: center;
   gap: 5px;
   font-size: 12px;
-  color: var(--bw-text-dim);
+  color: var(--blockstitch-text-dim);
   cursor: pointer;
 }
 .block-header-label { font-weight: 600; }
@@ -2558,10 +2558,10 @@ body.sidebar-resizing {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.dd-trigger-placeholder { color: var(--bw-text-dim); }
+.dd-trigger-placeholder { color: var(--blockstitch-text-dim); }
 .dd-trigger[aria-expanded="true"] {
-  border-color: var(--bw-accent);
-  box-shadow: var(--bw-bevel-top), var(--bw-shadow-sm), var(--bw-glow-accent);
+  border-color: var(--blockstitch-accent);
+  box-shadow: var(--blockstitch-bevel-top), var(--blockstitch-shadow-sm), var(--blockstitch-glow-accent);
 }
 .dd-trigger.dd-trigger-icon { justify-content: center; }
 .dd-trigger.dd-trigger-icon svg { width: 13px; height: 13px; }
@@ -2600,15 +2600,15 @@ body.sidebar-resizing {
   max-height: 280px;
   overflow-y: auto;
   padding: 4px;
-  background: var(--bw-glass-bg-strong);
-  backdrop-filter: blur(var(--bw-glass-blur));
-  -webkit-backdrop-filter: blur(var(--bw-glass-blur));
-  border: 1px solid var(--bw-glass-border);
-  border-radius: var(--bw-radius);
-  box-shadow: var(--bw-shadow-md);
-  animation: ddPanelEnter var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-glass-bg-strong);
+  backdrop-filter: blur(var(--blockstitch-glass-blur));
+  -webkit-backdrop-filter: blur(var(--blockstitch-glass-blur));
+  border: 1px solid var(--blockstitch-glass-border);
+  border-radius: var(--blockstitch-radius);
+  box-shadow: var(--blockstitch-shadow-md);
+  animation: ddPanelEnter var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
   scrollbar-width: thin;
-  scrollbar-color: var(--bw-scrollbar-thumb) transparent;
+  scrollbar-color: var(--blockstitch-scrollbar-thumb) transparent;
 }
 @keyframes ddPanelEnter {
   from { opacity: 0; transform: translateY(-4px) scale(0.98); }
@@ -2616,14 +2616,14 @@ body.sidebar-resizing {
 }
 .dd-option {
   padding: 6px 10px;
-  border-radius: calc(var(--bw-radius) - 2px);
+  border-radius: calc(var(--blockstitch-radius) - 2px);
   font-size: 13px;
   white-space: nowrap;
   cursor: pointer;
 }
-.dd-option[aria-selected="true"] { background: var(--bw-hover-overlay); }
-.dd-option:active { background: var(--bw-bg3); }
-.dd-option-current { color: var(--bw-accent); font-weight: 600; }
+.dd-option[aria-selected="true"] { background: var(--blockstitch-hover-overlay); }
+.dd-option:active { background: var(--blockstitch-bg3); }
+.dd-option-current { color: var(--blockstitch-accent); font-weight: 600; }
 
 /* ── Right-click context menu ────────────────────────────────────────────── */
 .context-menu {
@@ -2634,13 +2634,13 @@ body.sidebar-resizing {
   gap: 2px;
   min-width: 200px;
   padding: 4px;
-  background: var(--bw-glass-bg-strong);
-  backdrop-filter: blur(var(--bw-glass-blur));
-  -webkit-backdrop-filter: blur(var(--bw-glass-blur));
-  border: 1px solid var(--bw-glass-border);
-  border-radius: var(--bw-radius);
-  box-shadow: var(--bw-shadow-md);
-  animation: ddPanelEnter var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-glass-bg-strong);
+  backdrop-filter: blur(var(--blockstitch-glass-blur));
+  -webkit-backdrop-filter: blur(var(--blockstitch-glass-blur));
+  border: 1px solid var(--blockstitch-glass-border);
+  border-radius: var(--blockstitch-radius);
+  box-shadow: var(--blockstitch-shadow-md);
+  animation: ddPanelEnter var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
 .context-menu-item {
   display: flex;
@@ -2650,25 +2650,25 @@ body.sidebar-resizing {
   min-height: 0;
   padding: 7px 10px;
   border: none;
-  border-radius: calc(var(--bw-radius) - 2px);
+  border-radius: calc(var(--blockstitch-radius) - 2px);
   background: transparent;
   box-shadow: none;
-  color: var(--bw-text);
+  color: var(--blockstitch-text);
   font-size: 13px;
   justify-content: flex-start;
   white-space: nowrap;
 }
 .context-menu-item:hover:not(:disabled) {
-  background: var(--bw-hover-overlay);
+  background: var(--blockstitch-hover-overlay);
   transform: none;
   box-shadow: none;
 }
-.context-menu-item:active:not(:disabled) { background: var(--bw-bg3); }
+.context-menu-item:active:not(:disabled) { background: var(--blockstitch-bg3); }
 .context-menu-item-icon { display: flex; align-items: center; justify-content: center; line-height: 0; }
 .context-menu-item-icon svg { width: 14px; height: 14px; }
-.context-menu-item-active { color: var(--bw-accent); font-weight: 600; }
-.context-menu-item-danger { color: var(--bw-red); }
-.context-menu-item-danger:hover:not(:disabled) { background: rgba(var(--bw-red-rgb), 0.14); }
+.context-menu-item-active { color: var(--blockstitch-accent); font-weight: 600; }
+.context-menu-item-danger { color: var(--blockstitch-red); }
+.context-menu-item-danger:hover:not(:disabled) { background: rgba(var(--blockstitch-red-rgb), 0.14); }
 .context-menu-item:disabled { opacity: 0.38; cursor: default; }
 
 /* Split button: primary "add" action fused to a chevron that opens a type
@@ -2689,7 +2689,7 @@ body.sidebar-resizing {
   border-right: none;
 }
 .dd-split-group .dd-split-chevron {
-  min-width: var(--bw-btn-h-md);
+  min-width: var(--blockstitch-btn-h-md);
   padding: 0 8px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -2698,13 +2698,13 @@ body.sidebar-resizing {
 
 /* ── Confirm highlight ───────────────────────────────────────────────────── */
 button.confirm-armed {
-  border-color: var(--bw-yellow);
-  color: var(--bw-yellow);
-  animation: confirmPulse var(--bw-dur-slow) var(--bw-ease-spring);
+  border-color: var(--blockstitch-yellow);
+  color: var(--blockstitch-yellow);
+  animation: confirmPulse var(--blockstitch-dur-slow) var(--blockstitch-ease-spring);
 }
 @keyframes confirmPulse {
   0%   { transform: scale(1); }
-  40%  { transform: scale(1.06); box-shadow: var(--bw-shadow-sm), 0 0 0 6px rgba(var(--bw-yellow-rgb), 0.25); }
+  40%  { transform: scale(1.06); box-shadow: var(--blockstitch-shadow-sm), 0 0 0 6px rgba(var(--blockstitch-yellow-rgb), 0.25); }
   100% { transform: scale(1); }
 }
 
@@ -2716,10 +2716,10 @@ button.confirm-armed {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: var(--bw-spacing);
+  padding: var(--blockstitch-spacing);
   text-align: center;
-  color: var(--bw-text-dim);
-  animation: bannerEnter var(--bw-dur-slow) var(--bw-ease-spring);
+  color: var(--blockstitch-text-dim);
+  animation: bannerEnter var(--blockstitch-dur-slow) var(--blockstitch-ease-spring);
 }
 .empty-state svg {
   width: 40px;
@@ -2730,7 +2730,7 @@ button.confirm-armed {
 .empty-state p {
   font-size: 14px;
   font-weight: 600;
-  color: var(--bw-text);
+  color: var(--blockstitch-text);
 }
 .empty-state span {
   font-size: 12px;
@@ -2738,7 +2738,7 @@ button.confirm-armed {
 }
 .empty-state-inline {
   min-height: 160px;
-  padding: var(--bw-spacing) 0;
+  padding: var(--blockstitch-spacing) 0;
 }
 
 /* ── Toggle switches ─────────────────────────────────────────────────────── */
@@ -2762,11 +2762,11 @@ button.confirm-armed {
   height: 20px;
   flex-shrink: 0;
   border-radius: 999px;
-  background: var(--bw-bg3);
-  border: 1px solid var(--bw-border);
-  box-shadow: var(--bw-bevel-press);
-  transition: background var(--bw-dur-fast) var(--bw-ease-standard),
-              border-color var(--bw-dur-fast) var(--bw-ease-standard);
+  background: var(--blockstitch-bg3);
+  border: 1px solid var(--blockstitch-border);
+  box-shadow: var(--blockstitch-bevel-press);
+  transition: background var(--blockstitch-dur-fast) var(--blockstitch-ease-standard),
+              border-color var(--blockstitch-dur-fast) var(--blockstitch-ease-standard);
 }
 .switch-knob {
   position: absolute;
@@ -2775,20 +2775,20 @@ button.confirm-armed {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: var(--bw-text);
-  box-shadow: var(--bw-shadow-sm);
-  transition: transform var(--bw-dur-base) var(--bw-ease-spring);
+  background: var(--blockstitch-text);
+  box-shadow: var(--blockstitch-shadow-sm);
+  transition: transform var(--blockstitch-dur-base) var(--blockstitch-ease-spring);
 }
 .switch input[type="checkbox"]:checked + .switch-track {
-  background: var(--bw-accent);
-  border-color: var(--bw-accent);
+  background: var(--blockstitch-accent);
+  border-color: var(--blockstitch-accent);
 }
 .switch input[type="checkbox"]:checked + .switch-track .switch-knob {
   transform: translateX(16px);
   background: #fff;
 }
 .switch input[type="checkbox"]:focus-visible + .switch-track {
-  box-shadow: var(--bw-bevel-press), var(--bw-glow-accent);
+  box-shadow: var(--blockstitch-bevel-press), var(--blockstitch-glow-accent);
 }
 .switch-dragging .switch-track,
 .switch-dragging .switch-knob {

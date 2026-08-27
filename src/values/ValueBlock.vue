@@ -134,7 +134,7 @@ function onPointerDown(e: PointerEvent) {
     ref="rootEl"
     class="value-block"
     :class="{ 'value-card-shape': boxed && !isBool, 'value-card-shape-bool': boxed && isBool, 'value-hex-blank': !boxed && isBool }"
-    :style="isBool ? { '--bw-bh': blockHeight + 'px' } : undefined"
+    :style="isBool ? { '--blockstitch-bh': blockHeight + 'px' } : undefined"
     :data-value-location="JSON.stringify(location)"
     @pointerdown="onPointerDown"
   >
