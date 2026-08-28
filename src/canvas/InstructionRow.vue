@@ -16,6 +16,17 @@ const props = defineProps<{ strandId: string; path: NodePath; instruction: Block
 // `part="head"` and once with `part="body"`.
 const shape = computed(() => shapeFor(props.instruction.type));
 const isWrap = computed(() => shape.value?.kind === 'wrap');
+// The foot bar's top notch receives the bottom bump of whichever row ends
+// up last in the *last* slot (for If-Else, the else arm; every other wrap
+// type has only one slot). A cap-type row there has no bump to receive —
+// see `.wrap-bar-flat-notch` in the theme CSS for why that leaves an
+// unfilled hole unless this class steps in to trace a flat top instead.
+const footNotchFlat = computed(() => {
+  const slots = shape.value?.getSlots?.(props.instruction);
+  const lastSlot = slots?.[slots.length - 1];
+  const lastRow = lastSlot?.[lastSlot.length - 1];
+  return !!lastRow && isCapType(lastRow.type);
+});
 const fieldComponent = computed(() => getBlockField(props.instruction.type));
 const typeIcon = computed(() => shape.value?.icon);
 const showIcon = computed(() => !isHeaderType(props.instruction.type));
@@ -130,7 +141,7 @@ function onRowPointerLeave() {
       <component :is="fieldComponent" part="head" :strand-id="strandId" :path="path" :instruction="instruction" />
     </div>
     <component :is="fieldComponent" part="body" :strand-id="strandId" :path="path" :instruction="instruction" />
-    <div class="wrap-foot-bar" />
+    <div class="wrap-foot-bar" :class="{ 'wrap-bar-flat-notch': footNotchFlat }" />
   </div>
   <div
     v-else
