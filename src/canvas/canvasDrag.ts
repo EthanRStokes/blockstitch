@@ -405,7 +405,14 @@ function beginPan(e: PointerEvent) {
   // and other dropdowns listen for to close on an outside click, so without
   // this they'd only close once the pan's pointermove fires (e.g. scrolling
   // the canvas trips their own scroll-closes-menu handler), not on the
-  // initiating click itself.
+  // initiating click itself. The same suppressed default also normally
+  // blurs whatever text field currently has focus (a value/field edit, a
+  // comment body, ...) — since preventDefault() below cancels that too, do
+  // it explicitly so clicking empty canvas space still deselects it.
+  const active = document.activeElement;
+  if (active instanceof HTMLElement && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable)) {
+    active.blur();
+  }
   closeAllDropdowns();
   blockPrimaryPaste = true;
   blockPrimaryPasteGeneration++;

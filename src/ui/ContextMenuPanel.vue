@@ -4,7 +4,6 @@
 // an `items` list (whatever it wants — block actions, canvas actions, a
 // variable's actions, ...) and this component just presents it.
 import { nextTick, onBeforeUnmount, ref, watch, type Component } from 'vue';
-import { registerOpen, unregisterOpen } from './dropdownRegistry';
 
 export interface ContextMenuItem {
   key: string;
@@ -58,13 +57,11 @@ watch(
       document.addEventListener('keydown', onKeydown);
       window.addEventListener('scroll', onScrollOrResize, true);
       window.addEventListener('resize', onScrollOrResize);
-      registerOpen(close);
     } else {
       document.removeEventListener('mousedown', onOutsideMouseDown, true);
       document.removeEventListener('keydown', onKeydown);
       window.removeEventListener('scroll', onScrollOrResize, true);
       window.removeEventListener('resize', onScrollOrResize);
-      unregisterOpen(close);
     }
   },
 );
