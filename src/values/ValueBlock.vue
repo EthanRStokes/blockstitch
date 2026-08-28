@@ -127,6 +127,20 @@ function onPointerDown(e: PointerEvent) {
   e.stopPropagation();
   if (rootEl.value) beginValuePickup(e, props.location, props.value, rootEl.value);
 }
+
+function onContextMenu(e: MouseEvent) {
+  // Same "is this actually a block" gate as the pickup drag above — a bare
+  // leaf typed into a field isn't a block to show a menu for, and leaving
+  // its native right-click (paste, etc.) alone matters more than a menu.
+  if (!boxed.value) return;
+  // An operator nested inside another operator is itself a ValueBlock, so
+  // without stopping here the event would keep bubbling into the enclosing
+  // operator's own listener and reopen the menu for *that* one instead —
+  // same reasoning as InstructionRow.vue's onRowContextMenu.
+  e.preventDefault();
+  e.stopPropagation();
+  getHost().onValueContextMenu?.(e, props.location, displayValue.value);
+}
 </script>
 
 <template>
@@ -137,6 +151,7 @@ function onPointerDown(e: PointerEvent) {
     :style="isBool ? { '--blockstitch-bh': blockHeight + 'px' } : undefined"
     :data-value-location="JSON.stringify(location)"
     @pointerdown="onPointerDown"
+    @contextmenu="onContextMenu"
   >
     <template v-if="displayValue.kind === 'Op'">
       <span v-if="label?.prefix" class="value-op">{{ label.prefix }}</span>

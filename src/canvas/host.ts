@@ -108,6 +108,13 @@ export interface CanvasHost<TNode extends BlockNode = BlockNode> {
    * (a `PaletteValueBlock`) — every kind except `Var:<name>`, which uses
    * `onVariableContextMenu` instead. */
   onPaletteValueContextMenu?(e: MouseEvent, kind: string): void;
+  /** Opens the host's own right-click menu for a boxed value block already
+   * placed on the canvas — an operator, `Var`/`Param`/`Call` node, or a
+   * standalone floating leaf (see `ValueBlock.vue`'s `boxed`); never offered
+   * for a bare unboxed leaf sitting in a field. The host resolves what to
+   * show from `value` itself, the same way `onBlockContextMenu` resolves the
+   * instruction from `strandId`/`path`. */
+  onValueContextMenu?(e: MouseEvent, location: ValueLocation, value: ValueNode): void;
   /** Resolves a `Call` value node's block-prototype "pieces" (labels +
    * input positions) for rendering — `undefined` if the block id isn't
    * known. Only needed if the host uses `Call` value nodes at all. */
