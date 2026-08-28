@@ -225,8 +225,18 @@ function isSelfOrDescendant(candidate: ValueLocation, root: ValueLocation): bool
   return candidate.path.length >= root.path.length && root.path.every((p, i) => candidate.path[i] === p);
 }
 
+function isFloatingRootLocation(location: ValueLocation): boolean {
+  return location.kind === 'Floating' && location.path.length === 0;
+}
+
 /** Walks up to the nearest `[data-value-location]` block, skipping the
- * dragged block's own subtree (can't drop into itself or its own operand). */
+ * dragged block's own subtree (can't drop into itself or its own operand)
+ * and a standalone floating card's own root — that's a block placed on
+ * purpose in its own right, not a slot waiting to be filled, so dropping
+ * onto its background (as opposed to one of its own input fields, which is
+ * a nested, more specific match found first) isn't a valid target; the
+ * caller's fallback ("no target" → drop as a new floating value) leaves the
+ * card it landed on untouched. */
 function findDropTarget(clientX: number, clientY: number, exclude: ValueLocation | null): { el: HTMLElement; location: ValueLocation } | null {
   let el: Element | null = document.elementFromPoint(clientX, clientY);
   while (el) {
@@ -239,7 +249,7 @@ function findDropTarget(clientX: number, clientY: number, exclude: ValueLocation
       return null;
     }
     const isSelf = !!exclude && isSelfOrDescendant(location, exclude);
-    if (!isSelf) {
+    if (!isSelf && !isFloatingRootLocation(location)) {
       return { el: match, location };
     }
     el = match.parentElement;
@@ -336,17 +346,14 @@ function onPointerUp(e: PointerEvent) {
           unmarkCapsule(finished.source.location);
         }
 
-        // A floating card's root is just the slot itself (not "a block placed
-        // on purpose"), so dropping onto it always swaps content in place via
-        // put_value, keeping the card's id/x/y.
-        const isFloatingRoot = targetLoc.kind === 'Floating' && targetLoc.path.length === 0;
-
         // A boxed field target (operator, or a dropped-in leaf capsule) was
         // placed there on purpose, so replacing it ejects the old value as its
         // own floating card instead of silently absorbing it. An unboxed
         // (typed-in) target keeps plain put_value behavior. Read the class off
-        // the live element since it already reflects ValueBlock.vue's `boxed`.
-        if (!isFloatingRoot && (targetEl.classList.contains('value-card-shape') || targetEl.classList.contains('value-card-shape-bool'))) {
+        // the live element since it already reflects ValueBlock.vue's `boxed`
+        // (findDropTarget already excludes a standalone floating card's own
+        // root, so `targetLoc` here is always a real slot, never that).
+        if (targetEl.classList.contains('value-card-shape') || targetEl.classList.contains('value-card-shape-bool')) {
           const r = targetEl.getBoundingClientRect();
           const [x, y] = clientToCanvas(r.right + 16, r.top);
           const displaced = await backend.takeValue(targetLoc);
