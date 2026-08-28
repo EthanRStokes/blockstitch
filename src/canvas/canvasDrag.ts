@@ -323,6 +323,41 @@ function onCanvasWheel(e: WheelEvent) {
   zoomBy(factor, e.clientX, e.clientY);
 }
 
+// ── Zoom (trackpad pinch) ────────────────────────────────────────────────────
+// Chromium/Firefox report a trackpad pinch as ctrl+wheel (handled above), but
+// WebKit — Safari, and the WebKitGTK webview Tauri embeds on Linux — instead
+// fires its non-standard gesturestart/gesturechange/gestureend events, whose
+// `scale` is cumulative from gesture start rather than incremental, so each
+// change is divided by the last seen scale to get a per-event zoom factor.
+// Not in lib.dom.d.ts, so the shape is declared locally and events are read
+// through it rather than through the standard Event type.
+interface GestureEventLike extends Event {
+  scale: number;
+  clientX: number;
+  clientY: number;
+}
+let gestureLastScale = 1;
+
+function onGestureStart(e: Event) {
+  if (!(e.target as Element)?.closest?.('#canvas-scroll')) return;
+  e.preventDefault();
+  gestureLastScale = 1;
+}
+
+function onGestureChange(e: Event) {
+  if (!(e.target as Element)?.closest?.('#canvas-scroll')) return;
+  e.preventDefault();
+  const ge = e as GestureEventLike;
+  const factor = ge.scale / gestureLastScale;
+  gestureLastScale = ge.scale;
+  zoomBy(factor, ge.clientX, ge.clientY);
+}
+
+function onGestureEnd(e: Event) {
+  if (!(e.target as Element)?.closest?.('#canvas-scroll')) return;
+  e.preventDefault();
+}
+
 const BUTTON_ZOOM_FACTOR = 1.25;
 
 /** Zoom-in button handler — zooms in around the canvas viewport's center. */
@@ -1000,4 +1035,7 @@ export function attachDragListeners() {
   document.addEventListener('pointercancel', onPointerUp);
   document.addEventListener('paste', blockMiddleClickPaste, true);
   document.addEventListener('wheel', onCanvasWheel, { passive: false });
+  document.addEventListener('gesturestart', onGestureStart);
+  document.addEventListener('gesturechange', onGestureChange);
+  document.addEventListener('gestureend', onGestureEnd);
 }
