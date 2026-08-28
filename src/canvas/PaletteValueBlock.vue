@@ -42,9 +42,12 @@ function onPointerDown(e: PointerEvent) {
 }
 
 function onContextMenu(e: MouseEvent) {
-  if (!props.kind.startsWith('Var:')) return;
   e.preventDefault();
-  getHost().onVariableContextMenu?.(e, props.kind.slice(4));
+  if (props.kind.startsWith('Var:')) {
+    getHost().onVariableContextMenu?.(e, props.kind.slice(4));
+  } else {
+    getHost().onPaletteValueContextMenu?.(e, props.kind);
+  }
 }
 
 function onNumberInput(v: string) {

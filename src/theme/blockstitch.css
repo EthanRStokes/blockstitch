@@ -2309,6 +2309,29 @@ body.sidebar-resizing {
   margin-top: var(--blockstitch-spacing-sm);
 }
 
+/* ── "Details" dialog (a block's right-click "Details" item) ───────────── */
+.details-panel { width: 420px; max-width: calc(100vw - 32px); }
+.details-panel .modal-title {
+  display: flex;
+  align-items: center;
+  gap: var(--blockstitch-spacing-sm);
+}
+.details-identifier {
+  align-self: flex-start;
+  padding: 2px 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  color: var(--blockstitch-text-dim);
+  background: var(--blockstitch-bg3);
+  border-radius: var(--blockstitch-radius);
+}
+.details-explainer {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--blockstitch-text-dim);
+}
+
 /* ── "Open App" picker (AppSelectorDialog.vue) ──────────────────────────── */
 .app-selector-panel { width: 480px; max-width: calc(100vw - 32px); }
 .app-selector-search {

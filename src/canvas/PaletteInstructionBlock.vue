@@ -13,6 +13,7 @@ import type { BlockNode } from '../graph/blockGraph';
 import { isCapType, isEntryTriggerType, isHeaderType, shapeFor } from '../graph/shapeRegistry';
 import { getPaletteBlockField } from '../graph/fieldRegistry';
 import { beginPaletteDrag } from './canvasDrag';
+import { getHost } from './host';
 
 const props = defineProps<{ type: string; instruction: BlockNode; variantId?: string }>();
 
@@ -28,10 +29,15 @@ function onPointerDown(e: PointerEvent) {
   const el = e.currentTarget as HTMLElement;
   beginPaletteDrag(e, props.type, el.cloneNode(true) as HTMLElement, props.variantId);
 }
+
+function onContextMenu(e: MouseEvent) {
+  e.preventDefault();
+  getHost().onPaletteInstructionContextMenu?.(e, props.type, props.variantId);
+}
 </script>
 
 <template>
-  <div v-if="isWrap" class="instruction-row instruction-row-wrap palette-prefab" @pointerdown="onPointerDown">
+  <div v-if="isWrap" class="instruction-row instruction-row-wrap palette-prefab" @pointerdown="onPointerDown" @contextmenu="onContextMenu">
     <div class="wrap-head-line">
       <component :is="typeIcon" class="instruction-type-icon-inline" />
       <component :is="fieldComponent" :instruction="instruction" part="head" />
@@ -44,6 +50,7 @@ function onPointerDown(e: PointerEvent) {
     class="instruction-row palette-prefab"
     :class="{ 'instruction-row-when-ran': isEntryTriggerType(type), 'instruction-row-header': isHeaderType(type), 'instruction-row-cap': isCapType(type) }"
     @pointerdown="onPointerDown"
+    @contextmenu="onContextMenu"
   >
     <div class="instruction-shape">
       <component :is="typeIcon" v-if="!isHeaderType(type)" class="instruction-type-icon" />

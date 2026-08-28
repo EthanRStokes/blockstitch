@@ -100,6 +100,14 @@ export interface CanvasHost<TNode extends BlockNode = BlockNode> {
   onBlockContextMenu?(e: MouseEvent, strandId: string, path: NodePath): void;
   /** Opens the host's own right-click menu for a `Var:<name>` palette entry. */
   onVariableContextMenu?(e: MouseEvent, name: string): void;
+  /** Opens the host's own right-click menu for a sidebar instruction-palette
+   * entry (a `PaletteInstructionBlock`). `variantId` mirrors
+   * `clonePaletteInstruction`'s. */
+  onPaletteInstructionContextMenu?(e: MouseEvent, type: string, variantId?: string): void;
+  /** Opens the host's own right-click menu for a sidebar value-palette entry
+   * (a `PaletteValueBlock`) — every kind except `Var:<name>`, which uses
+   * `onVariableContextMenu` instead. */
+  onPaletteValueContextMenu?(e: MouseEvent, kind: string): void;
   /** Resolves a `Call` value node's block-prototype "pieces" (labels +
    * input positions) for rendering — `undefined` if the block id isn't
    * known. Only needed if the host uses `Call` value nodes at all. */
